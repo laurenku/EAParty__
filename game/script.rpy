@@ -30,8 +30,91 @@ image e sad = "esad.png"
 image e thinking = "ethinking.png"
 
 #image edog = "dyingdog.png"
-image edog movie = Movie(play="idle.webm")
-
+#image edog movie = Movie(play="idle.webm")
+image idle:
+    "output-onlineimagetools.png"
+    0.1
+    "output-onlineimagetools (1).png"
+    0.1
+    "output-onlineimagetools (2).png"
+    0.1
+    "output-onlineimagetools (3).png"
+    0.1
+    "output-onlineimagetools (4).png"
+    0.1
+    "output-onlineimagetools (5).png"
+    0.1
+    "output-onlineimagetools (6).png"
+    0.1
+    "output-onlineimagetools (7).png"
+    0.1
+    "output-onlineimagetools (8).png"
+    0.1
+    "output-onlineimagetools (9).png"
+    0.1
+    "output-onlineimagetools (10).png"
+    0.1
+    "output-onlineimagetools (11).png"
+    0.1
+    "output-onlineimagetools (12).png"
+    0.1
+    "output-onlineimagetools (13).png"
+    0.1
+    "output-onlineimagetools (14).png"
+    0.1
+    "output-onlineimagetools (15).png"
+    0.1
+    "output-onlineimagetools (16).png"
+    0.1
+    "output-onlineimagetools (17).png"
+    0.1
+    "output-onlineimagetools (18).png"
+    0.1
+    "output-onlineimagetools (19).png"
+    0.1
+    "output-onlineimagetools (20).png"
+    0.1
+    "output-onlineimagetools (21).png"
+    0.1
+    "output-onlineimagetools (22).png"
+    0.1
+    "output-onlineimagetools (23).png"
+    0.1
+    "output-onlineimagetools (24).png"
+    0.1
+    "output-onlineimagetools (25).png"
+    0.1
+    "output-onlineimagetools (26).png"
+    0.1
+    "output-onlineimagetools (27).png"
+    0.1
+    "output-onlineimagetools (28).png"
+    0.1
+    "output-onlineimagetools (29).png"
+    0.1
+    "output-onlineimagetools (30).png"
+    0.1
+    "output-onlineimagetools (31).png"
+    0.1
+    "output-onlineimagetools (32).png"
+    0.1
+    "output-onlineimagetools (33).png"
+    0.1
+    "output-onlineimagetools (34).png"
+    0.1
+    "output-onlineimagetools (35).png"
+    0.1
+    "output-onlineimagetools (36).png"
+    0.1
+    "output-onlineimagetools (37).png"
+    0.1
+    "output-onlineimagetools (38).png"
+    0.1
+    "output-onlineimagetools (39).png"
+    0.1
+    "output-onlineimagetools (40).png"
+    0.1
+    repeat
 
 image bg convention = "bg convention.jpg"
 image bg deepfake = "deepfake.png"
@@ -207,7 +290,7 @@ label con:
 
         d "Help... help me, please... I am in massive pain..."
 
-        show edog movie
+        show idle
 
 
 
@@ -286,7 +369,7 @@ label con:
         "..."
         "..."
 
-        hide edog
+        hide idle
 
         a "...I think... they're gone... oh my gosh..."
 
@@ -359,8 +442,8 @@ label con:
         a "*does it perfectly, but trips on a strange white blob at the very end*"
         a "Huh?"
 
-        show edog movie
-        
+        show idle
+
 
 
         d "Help... help me, please... I am in massive pain..."
@@ -464,7 +547,7 @@ label con:
         "..."
 
 
-        hide edog
+        hide idle
 
         e "Fuck. I think. I think Begg's fucking dead."
 
