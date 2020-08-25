@@ -1,0 +1,55 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 363: end of line expected.
+(Perhaps you left out a " at the end of the first line.)
+    """
+            show edog:
+                "output-onlineimagetools.png"
+                   ^
+                "output-onlineimagetools (1).png"
+                "output-onlineimagetools (2).png"
+                "output-onlineimagetools (3).png"
+                "output-onlineimagetools (4).png"
+                "output-onlineimagetools (5).png"
+                "output-onlineimagetools (6).png"
+                "output-onlineimagetools (7).png"
+                "output-onlineimagetools (8).png"
+                "output-onlineimagetools (9).png"
+                "output-onlineimagetools (10).png"
+                "output-onlineimagetools (11).png"
+                "output-onlineimagetools (12).png"
+                "output-onlineimagetools (13).png"
+                "output-onlineimagetools (14).png"
+                "output-onlineimagetools (15).png"
+                "output-onlineimagetools (16).png"
+                "output-onlineimagetools (17).png"
+                "output-onlineimagetools (18).png"
+                "output-onlineimagetools (19).png"
+                "output-onlineimagetools (20).png"
+                "output-onlineimagetools (21).png"
+                "output-onlineimagetools (22).png"
+                "output-onlineimagetools (23).png"
+                "output-onlineimagetools (24).png"
+                "output-onlineimagetools (25).png"
+                "output-onlineimagetools (26).png"
+                "output-onlineimagetools (27).png"
+                "output-onlineimagetools (28).png"
+                "output-onlineimagetools (29).png"
+                "output-onlineimagetools (30).png"
+                "output-onlineimagetools (31).png"
+                "output-onlineimagetools (32).png"
+                "output-onlineimagetools (33).png"
+                "output-onlineimagetools (34).png"
+                "output-onlineimagetools (35).png"
+                "output-onlineimagetools (36).png"
+                "output-onlineimagetools (37).png"
+                "output-onlineimagetools (38).png"
+                "output-onlineimagetools (39).png"
+                "output-onlineimagetools (40).png"
+                repeat 100
+            """
+
+Ren'Py Version: Ren'Py 7.3.5.606
+Tue Aug 25 16:07:23 2020
