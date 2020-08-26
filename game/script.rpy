@@ -33,86 +33,127 @@ image e thinking = "ethinking.png"
 #image edog movie = Movie(play="idle.webm")
 image idle:
     "output-onlineimagetools.png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (1).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (2).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (3).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (4).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (5).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (6).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (7).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (8).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (9).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (10).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (11).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (12).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (13).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (14).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (15).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (16).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (17).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (18).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (19).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (20).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (21).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (22).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (23).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (24).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (25).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (26).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (27).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (28).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (29).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (30).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (31).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (32).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (33).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (34).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (35).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (36).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (37).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (38).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (39).png"
+    size(1041.3,663.3)
     0.1
     "output-onlineimagetools (40).png"
+    size(1041.3,663.3)
     0.1
     repeat
 
