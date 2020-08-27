@@ -335,6 +335,10 @@ image bg stever double = "dorm.png"
 image conv transition= "conv transition.png"
 image poke transition= "poke transition.png"
 
+image transition2 movie = Movie(size=(1280,720), play="Transition2again.webm", image="bg convention.jpg", loop=False)
+image transition1 movie = Movie(size=(1280,720), play="Transition1.webm", loop=False)
+
+
 
 image ticket = "ticket.png"
 
@@ -465,18 +469,25 @@ else:
 label con:
 
     #scene black
+    scene bg convention
+    $ renpy.movie_cutscene("Transition1.webm", delay=14, loops=0, stop_music=False)
+    $ renpy.movie_cutscene("Transition2again.webm", delay=10, loops=0, stop_music=False)
+    show bg convention
 
-    show conv transition
+    #show transition1 movie
+    #show transition2 movie
 
-    show conventionStill
+
+    #show conventionStill
 
     if epath:
-        e "We're here!"
 
-        scene bg convention
+
+        #scene bg convention
         play music convention
-        show idle
+        #show idle
 
+        e "We're here!"
         show e thinking at left
         e "Wow, this place looks like shit. Damn, what the hell happened here? This is even worse than Dashcon."
 
@@ -501,6 +512,7 @@ label con:
         d "Help..."
 
         show e thinking
+        show idle
         #REPLACE WITH E SURPRISED/STARTLED
         e "Oh my god! Is that a monster??"
 
@@ -571,13 +583,16 @@ label con:
         jump eggdogdex
 
     else:
+
+
+        #scene bg convention
+        play music convention
+        #show idle
+
         a "We made it!"
 
-        scene bg convention
-        play music convention
-        show idle
-
         show a thinking at left
+
 
         a "It's... a little deserted."
         a "Are we late after all? Where is everybody?"
@@ -601,7 +616,7 @@ label con:
         a "No!"
 
         show a happy
-
+        show idle
         a "No!! It's an Eggdog!"
 
         d "Help... help me, please..."
@@ -650,13 +665,13 @@ label con:
 
         "Emily picks up BEGG'S EGGDOGDEX from the ground."
 
+        show a thinking
+
         a "Huh. I guess its name is Begg."
 
         e "What? How can you tell?"
 
         a "I guess it's the big masking tape on the back of it with the word BEGG written in Sharpie. XD"
-
-        show a thinking
 
         e "How do you work this thing?"
 

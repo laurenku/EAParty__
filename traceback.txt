@@ -1,44 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-Compiling ATL code at game/script.rpy:175
-  File "game/script.rpy", line 797, in script
-    a "conversation pending"
-Exception: Can't register channel outside of init phase.
+Compiling ATL code at game/script.rpy:472
+  File "game/script.rpy", line 471, in script
+    show transition:
+NameError: name 'transition1' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 797, in script
-    a "conversation pending"
-  File "C:\Users\singi\Documents\renpy-7.3.5-sdk\renpy\ast.py", line 708, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\singi\Documents\renpy-7.3.5-sdk\renpy\exports.py", line 1345, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\singi\Documents\renpy-7.3.5-sdk\renpy\character.py", line 1142, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, **display_args)
-  File "C:\Users\singi\Documents\renpy-7.3.5-sdk\renpy\character.py", line 842, in do_display
-    **display_args)
-  File "C:\Users\singi\Documents\renpy-7.3.5-sdk\renpy\character.py", line 591, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "C:\Users\singi\Documents\renpy-7.3.5-sdk\renpy\ui.py", line 297, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\singi\Documents\renpy-7.3.5-sdk\renpy\display\core.py", line 2702, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "C:\Users\singi\Documents\renpy-7.3.5-sdk\renpy\display\core.py", line 3094, in interact_core
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "C:\Users\singi\Documents\renpy-7.3.5-sdk\renpy\display\core.py", line 541, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\singi\Documents\renpy-7.3.5-sdk\renpy\display\core.py", line 541, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\singi\Documents\renpy-7.3.5-sdk\renpy\display\core.py", line 541, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\singi\Documents\renpy-7.3.5-sdk\renpy\display\core.py", line 541, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\singi\Documents\renpy-7.3.5-sdk\renpy\display\core.py", line 541, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\singi\Documents\renpy-7.3.5-sdk\renpy\display\core.py", line 531, in visit_all
-    for d in self.visit():
-  File "C:\Users\singi\Documents\renpy-7.3.5-sdk\renpy\atl.py", line 582, in visit
+  File "game/script.rpy", line 471, in script
+    show transition:
+  File "C:\Users\singi\Documents\renpy-7.3.5-sdk\renpy\ast.py", line 1183, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\singi\Documents\renpy-7.3.5-sdk\renpy\ast.py", line 1153, in show_imspec
+    atl=atl)
+  File "C:\Users\singi\Documents\renpy-7.3.5-sdk\renpy\exports.py", line 717, in show
+    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
+  File "C:\Users\singi\Documents\renpy-7.3.5-sdk\renpy\display\core.py", line 1078, in add
+    thing._show()
+  File "C:\Users\singi\Documents\renpy-7.3.5-sdk\renpy\display\transform.py", line 1048, in _show
+    super(ATLTransform, self)._show()
+  File "C:\Users\singi\Documents\renpy-7.3.5-sdk\renpy\display\transform.py", line 1014, in _show
+    self.update_state()
+  File "C:\Users\singi\Documents\renpy-7.3.5-sdk\renpy\display\transform.py", line 1036, in update_state
+    fr = self.execute(self, self.st, self.at)
+  File "C:\Users\singi\Documents\renpy-7.3.5-sdk\renpy\atl.py", line 521, in execute
     block = self.compile()
   File "C:\Users\singi\Documents\renpy-7.3.5-sdk\renpy\atl.py", line 489, in compile
     block = self.atl.compile(self.context)
@@ -49,15 +35,9 @@ Full traceback:
   File "C:\Users\singi\Documents\renpy-7.3.5-sdk\renpy\atl.py", line 246, in eval
     return eval(expr, renpy.store.__dict__, self.context)  # @UndefinedVariable
   File "<string>", line 1, in <module>
-  File "C:\Users\singi\Documents\renpy-7.3.5-sdk\renpy\display\video.py", line 369, in __init__
-    self.ensure_channel(self.channel)
-  File "C:\Users\singi\Documents\renpy-7.3.5-sdk\renpy\display\video.py", line 340, in ensure_channel
-    renpy.audio.music.register_channel(name, renpy.config.movie_mixer, loop=True, stop_on_mute=False, movie=True, framedrop=framedrop)
-  File "C:\Users\singi\Documents\renpy-7.3.5-sdk\renpy\audio\audio.py", line 757, in register_channel
-    raise Exception("Can't register channel outside of init phase.")
-Exception: Can't register channel outside of init phase.
+NameError: name 'transition1' is not defined
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 AE Party 1.0
-Wed Aug 26 18:21:13 2020
+Thu Aug 27 11:05:53 2020
