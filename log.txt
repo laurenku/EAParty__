@@ -1,38 +1,37 @@
-Wed Aug 26 19:54:50 2020
+Wed Aug 26 23:10:28 2020
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
  
 
-Bootstrap to the start of init.init took 0.13s
+Bootstrap to the start of init.init took 0.22s
 Early init took 0.01s
-Loader init took 0.05s
-Loading error handling took 0.08s
-Loading script took 0.59s
-Loading save slot metadata. took 0.20s
+Loader init took 0.08s
+Loading error handling took 0.07s
+Loading script took 0.29s
+Loading save slot metadata. took 0.07s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.21s
-Loading analysis data took 0.06s
-Analyze and compile ATL took 0.02s
+Running init code took 0.34s
+Loading analysis data took 0.07s
+Analyze and compile ATL took 0.01s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\singi\\AppData\\Roaming/RenPy/backups\\EAParty__':
-Dump and make backups. took 0.14s
+Dump and make backups. took 0.19s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.03s
+Initial gc. took 0.04s
 DPI scale factor: 2.500000
-Creating interface object took 0.09s
+Creating interface object took 0.12s
 Cleaning stores took 0.00s
-Init translation took 0.04s
+Init translation took 0.08s
 Build styles took 0.01s
-Load screen analysis took 0.01s
-Analyze screens took 0.03s
-Save screen analysis took 0.15s
-Prepare screens took 0.11s
-Save pyanalysis. took 0.18s
-Save bytecode. took 0.44s
+Load screen analysis took 0.09s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.19s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.23s
 Running _start took 0.00s
-Interface start took 0.04s
+Interface start took 0.09s
 
 primary display bounds: (0, 0, 3840, 2160)
 swap interval: 1 frames
@@ -285,13 +284,11 @@ Texture testing:
 - 2048px textures work.
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Total time until interface ready: 6.22499990463s
-The window was minimized.
-The window was restored.
+Total time until interface ready: 3.68899989128s
 
 primary display bounds: (0, 0, 3840, 2160)
 swap interval: 1 frames
 Windowed mode.
-Screen sizes: virtual=(1280, 720) physical=(3560, 2003) drawable=(3560, 2003)
+Screen sizes: virtual=(1280, 720) physical=(3840, 2004) drawable=(3840, 2004)
 Root FBO is: 0
 FBO Maximum Texture Size: 2048

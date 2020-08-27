@@ -170,9 +170,9 @@ image poke transition= "poke transition.png"
 
 image ticket = "ticket.png"
 
-image emDeepfake movie = Movie(size=(1280,720), play="AngieDeepFakeConversation.webm")
+image emDeepfake movie = Movie(size=(1280,720), play="EmilyDeepFakeConversation.webm")
 
-image angDeepfake movie = Movie(size=(1280,720), play="EmilyDeepFakeConversation.webm")
+image angDeepfake movie = Movie(size=(1280,720), play="AngieDeepFakeConversation.webm")
 
 # The game starts here.
 
@@ -648,54 +648,54 @@ if epath:
     show angDeepfake movie
     e "conversation pending"
 
-    """
-    scene bg stever double
-    play music dorm
 
-    a "We made it back home! Hurray!"
+    # scene bg stever double
+    # play music dorm
+    #
+    # a "We made it back home! Hurray!"
+    #
+    # show e laughing at left
+    # e "You were so cool back there Angie. The way you took no shit -"
+    # e "Like you were a cool knight fighting a dragon or something."
+    # e "Hold on - lemme draw a dragon real quick - "
+    #
+    # scene bg fantasy
+    #
+    # e "Yeah like this is the kind of mean motherfucker I can see you destroying."
+    #
+    # a "Wow, thank you Emily. That's really flattering."
+    #
+    # e "Except I guess the dragon was like... deepfake you...?"
+    # e "Hm. Kinda creepy lol."
+    #
+    # a "Yeah, it kinda was... I wonder where that came from?"
+    # a "Who made it, and why? What does it all mean?"
+    #
+    # "Is it somehow significant that it was a deepfake of me, and that I had to fight it?"
+    # "Is there some sort of greater symbolism going on here?"
+    #
+    # scene bg stever double
+    #
+    # a "I'm sure whatever it is, it doesn't really matter."
+    #
+    # show e happy at left
+    # e "That's true! I'm sure it doesnt really mean anything lol."
+    #
+    # a "Yeah it's not that deep."
+    #
+    # show e laughing
+    # e "I'm just glad to be your friend Angie! You're really cool and a total sweetheart!"
+    #
+    # a "Awww I'm glad to be your friend too!"
+    #
+    # show e happy
+    # show a happy at right
+    #
+    # "The person reading this text is a legend."
+    #
+    # hide e happy
+    # hide a happy
 
-    show e laughing at left
-    e "You were so cool back there Angie. The way you took no shit -"
-    e "Like you were a cool knight fighting a dragon or something."
-    e "Hold on - lemme draw a dragon real quick - "
-
-    scene bg fantasy
-
-    e "Yeah like this is the kind of mean motherfucker I can see you destroying."
-
-    a "Wow, thank you Emily. That's really flattering."
-
-    e "Except I guess the dragon was like... deepfake you...?"
-    e "Hm. Kinda creepy lol."
-
-    a "Yeah, it kinda was... I wonder where that came from?"
-    a "Who made it, and why? What does it all mean?"
-
-    "Is it somehow significant that it was a deepfake of me, and that I had to fight it?"
-    "Is there some sort of greater symbolism going on here?"
-
-    scene bg stever double
-
-    a "I'm sure whatever it is, it doesn't really matter."
-
-    show e happy at left
-    e "That's true! I'm sure it doesnt really mean anything lol."
-
-    a "Yeah it's not that deep."
-
-    show e laughing
-    e "I'm just glad to be your friend Angie! You're really cool and a total sweetheart!"
-
-    a "Awww I'm glad to be your friend too!"
-
-    show e happy
-    show a happy at right
-
-    "The person reading this text is a legend."
-
-    hide e happy
-    hide a happy
-    """
     jump credits
 
 else:
@@ -704,74 +704,75 @@ else:
 
     a "conversation pending"
 
-    scene black
-    scene bg fuku
-    play music dorm
+    # scene black
+    # scene bg fuku
+    # play music dorm
+    #
+    # e "Oh HECK yes fuku tea. Finally!"
+    #
+    # show a happy at left
+    # a "Looks like there are already three people inside and the max capacity is 4..."
+    # show a laughing
+    # a "Do you wanna go in first or shall I?"
+    #
+    # e "You go ahead, drinks are on ME after all."
+    # e "Wait wait, I'm so dumb, I have a better idea. Can you order for the both of us?"
+    #
+    # a "Sure. What do you want?"
+    #
+    # e "Anything's good. Surprise me!"
+    #
+    # a "Alright...That gives me a lot to work off of. I'll do my best?"
+    # show a happy
+    #
+    # e "Okay, even if I hate it, I'll still like it! Don't worry man."
+    #
+    # a "Okay okay..."
+    # hide a happy
+    #
+    # "Good thing I'm not a picky eater... this way we both get our drinks sooner AND we social distance..."
+    # "God that was such a pro gamer move... Emily you're so smart, goddamn."
+    #
+    # show a happy at left
+    #
+    # a "Alright, here you go! Hope you like it ( ͡~ ͜ʖ ͡°)!"
+    #
+    # e "Yo thanks!"
+    # "Okay... this is kind of terrible.... but I won't tell her that..."
+    #
+    # show a laughing
+    # a "By the way, thank you so much for stepping up back there..."
+    # a "I don't know if I could have gotten through fighting that deepfake version of you without you."
+    #
+    # e "Yeah that was kind of fucked up wasn't it? Like why was there a giant me?"
+    #
+    # show a sad
+    # a "Hm. Good question... I really don't know."
+    # a "... I wonder where that came from?"
+    # a "Who made it, and why? What does it all mean?"
+    # a "Is it somehow significant that it was a deepfake of you, and that we both had to fight it?"
+    # a "Alone, we wouldn't have made it, but with our combined strength we overcame it?"
+    # a "That a false image of you was the one responsible for ruining your day,"
+    # a "as well as mine... perhaps there's some allegory to be found about personal responsibility..."
+    # a "and our hand in controlling our own destiny and responses to difficult events..."
+    # a "Is there some sort of greater symbolism going on here?"
+    #
+    # e "I'm sure whatever it is, it doesn't really matter."
+    #
+    # show a thinking
+    # a "True, it's not that deep."
+    # show a laughing
+    # a "I'm really glad that I got to hang out with you today! It was so much fun <3"
+    #
+    # e "Awwwwwwwwwwww I'm happy you're my friend too!"
+    #
+    # show e happy at right
+    # show a happy
+    # "The person reading this text is a legend."
+    #
+    # hide e happy
+    # hide a happy
 
-    e "Oh HECK yes fuku tea. Finally!"
-
-    show a happy at left
-    a "Looks like there are already three people inside and the max capacity is 4..."
-    show a laughing
-    a "Do you wanna go in first or shall I?"
-
-    e "You go ahead, drinks are on ME after all."
-    e "Wait wait, I'm so dumb, I have a better idea. Can you order for the both of us?"
-
-    a "Sure. What do you want?"
-
-    e "Anything's good. Surprise me!"
-
-    a "Alright...That gives me a lot to work off of. I'll do my best?"
-    show a happy
-
-    e "Okay, even if I hate it, I'll still like it! Don't worry man."
-
-    a "Okay okay..."
-    hide a happy
-
-    "Good thing I'm not a picky eater... this way we both get our drinks sooner AND we social distance..."
-    "God that was such a pro gamer move... Emily you're so smart, goddamn."
-
-    show a happy at left
-
-    a "Alright, here you go! Hope you like it ( ͡~ ͜ʖ ͡°)!"
-
-    e "Yo thanks!"
-    "Okay... this is kind of terrible.... but I won't tell her that..."
-
-    show a laughing
-    a "By the way, thank you so much for stepping up back there..."
-    a "I don't know if I could have gotten through fighting that deepfake version of you without you."
-
-    e "Yeah that was kind of fucked up wasn't it? Like why was there a giant me?"
-
-    show a sad
-    a "Hm. Good question... I really don't know."
-    a "... I wonder where that came from?"
-    a "Who made it, and why? What does it all mean?"
-    a "Is it somehow significant that it was a deepfake of you, and that we both had to fight it?"
-    a "Alone, we wouldn't have made it, but with our combined strength we overcame it?"
-    a "That a false image of you was the one responsible for ruining your day,"
-    a "as well as mine... perhaps there's some allegory to be found about personal responsibility..."
-    a "and our hand in controlling our own destiny and responses to difficult events..."
-    a "Is there some sort of greater symbolism going on here?"
-
-    e "I'm sure whatever it is, it doesn't really matter."
-
-    show a thinking
-    a "True, it's not that deep."
-    show a laughing
-    a "I'm really glad that I got to hang out with you today! It was so much fun <3"
-
-    e "Awwwwwwwwwwww I'm happy you're my friend too!"
-
-    show e happy at right
-    show a happy
-    "The person reading this text is a legend."
-
-    hide e happy
-    hide a happy
     jump credits
 
 label credits:
