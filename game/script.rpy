@@ -6,6 +6,8 @@
 define e = Character("Emily", color="#27aa92")
 define a = Character("Angie", color="#edb0d7")
 define d = Character("Mysterious Eggdog", color = "#737373")
+define A = Character("Deepfake Angie", color="#edb0d7")
+define E = Character("Deepfake Emily", color="#27aa92")
 
 define audio.bird = "audio/bird.wav"
 
@@ -165,6 +167,7 @@ image bg stever double = "dorm.png"
 image conv transition= "conv transition.png"
 image poke transition= "poke transition.png"
 
+
 image ticket = "ticket.png"
 
 image emDeepfake movie = Movie(size=(1280,720), play="AngieDeepFakeConversation.webm")
@@ -321,108 +324,82 @@ label con:
 
         a "*also cries in broke*"
 
+        d "...help..."
 
+        a "What was that? Was that a ghost?"
+
+        e "It's the sound of my sadness... *continues to cry in broke*"
+
+        d "Help..."
 
         show e thinking
         #REPLACE WITH E SURPRISED/STARTLED
-        e "Oh my god! What is that?"
+        e "Oh my god! Is that a monster??"
 
-        #fixing script, left off here
-        d "Help... help me, please... I am in massive pain..."
+        a "No, I think that's an eggdog??"
 
-        e "Woah! Angie, there's an egg next to you! But I think it's a ... dog?"
+        d "Help... help me, please..."
 
-        a "Like an eggdog?"
-
-        e "Yeah!"
-
-        d "I have mere minutes left to live... please help..."
-
-        e "Hang on little guy, I think there's gotta be a first aid kit around here somewhere..."
-
-        a "Maybe check near the entrance?"
-
-        e "Good idea. I'll go run to get the kit - Angie, stay with the Eggdog while I'm gone!"
-        hide e happy
+        #show e thinking
 
         d "Euuuuughhhhh..."
-        d "*extreme noises of pain*"
-        d "I must... tell you... what happened here..."
 
         a "What happened? You... this place... everything looks terrible!"
 
-        d "Yes... a monster came... a monster so horrifying it is undescribable..."
+        d "Yes, a horrid beast, so grotesque, it makes my spine shiver even thinking about it right now... if I had a spine."
 
-        a "What did this monster look like?!"
+        a "Where is everyone?"
 
-        d "Horrifying...and indescribable..."
+        d "Gone."
 
-        "I had that one coming to me, didn't I?"
+        e "Gone how?"
 
-        d "Please... find the Eggdogs this monster scared off... they are hiding..."
+        d "Just gone... That pixelated creature whisked them away... You gotta help me!"
+
+        e "How can we help you?"
+
+        d "...find them..."
 
         a "Where?!"
 
-        d "Let me finish... around here... in the convention center... they hide in fear..."
-
-        show e angry at left
-        e "Okay I'm back, not to worry Eggdog dude! I got the first aid kit!"
-        e "Alright let's take a look in here... and for some reason it's filled with cheeto puffs. Huh."
-
-        a "Oh dear..."
-
-        d "... I thought it would be funny when I filled it with puffs..."
-
-        show e thinking
-        e "You did this?!"
-
-        a "Yeah I think that's what they're saying..."
-
-        e "Man, what the fuck? Okay. Okay. Okay okay okay okay."
-        e "I don't want to be mean, but you kinda deserve it at this point."
-
-        a "How could you say that? This little guy is in extreme pain!"
-
-        e "You're right, ack! I'm sorry, I just... I don't know how to feel about any of this-!"
-        e "I thought we were gonna have a fun afternoon with some eggdogs, but instead it's, it's this!"
-
-        a "I know how you feel... but we gotta keep it together."
-        a "For our buddy here... er... what was your name again?"
-
-        d "Call me... Begg..."
-
-        e "Like. Egg, but with a B?"
-
-        d "As I was saying... please find my comrades... you'll find an Eggdogdex in my pocket..."
-        d "This dex has the names of all the conventiongoers registered... with it you'll be able to find everyone..."
-        d "...I will... now be... passing.... away..."
-
-        e "SHIT WHAT THE FUCK NO DON'T DO THAT -"
-
-        d "Eurghhh....."
-
-        "..."
-        "..."
-        "..."
+        d "*exhales*"
 
         hide idle
 
-        a "...I think... they're gone... oh my gosh..."
+        e "*grabs Eggdog's body and shakes it profusely* NONONONONO you can't die on me like this, it's too SOON!! You have so much to live for!"
 
-        show e sad
+        "Everything is silent."
 
-        e "Oh my fucking god..."
+        e "..."
 
-        "There's only one thing to do from here, then."
-        "Eggdogdex... huh? That must be the thing in Begg's pocket..."
+        a "..."
 
-        a "Here, help me read this Dex."
+        d "zzzzzzz"
 
-        e "Yeah... sure."
+        a "Oh thank god, he's just sleeping!"
 
-        a "Let's go."
+        "Eggdog turns over in its sleep, something falls out of its pocket."
 
-        hide e sad
+        e "What's that?"
+
+        "Emily picks up BEGG'S EGGDOGDEX from the ground."
+
+        a "Huh. I guess its name is Begg."
+
+        e "What? How can you tell?"
+
+        a "I guess it's the big masking tape on the back of it with the word BEGG written in Sharpie. XD"
+
+        show e thinking
+
+        e "How do you work this thing?"
+
+        "Eggdogdex powers up."
+
+        a "Wow! This dex has the names of all the conventiongoers in it! With this, we'll be able to find everyone!"
+
+        e "Let's go!"
+
         jump eggdogdex
 
     else:
@@ -435,173 +412,93 @@ label con:
         show a thinking at left
 
         a "It's... a little deserted."
-        a "Are we late after all?"
+        a "Are we late after all? Where is everybody?"
 
-        e "No hold on... there's all those chairs and tables that are turned over..."
+        e "Oh my god, is this supposed to be registration!? That's it, I'm leaving a bad review on Google reviews! >:C"
 
-        a "And there gouges in the walls... I think something horrible happened. ʘ ʘ"
-        a "Maybe... all the Eggdogs decided to add a post apocalyptic theme?"
-        a "It IS 2020 after all... something like that could spread awareness about proper mask procedures...?"
+        a "I was expecting some freebies! Where are they? ʘ ʘ"
 
-        e "Goddamn."
+        a "Are we being pranked right now? Who's funny joke was this?"
 
-        a "Like, they're gonna hop out any minute and tell us it was all a prank?"
-        a "Any minute now. Aaaany minute."
+        e "Well, I'm not leaving empty handed! Let's take some stuff and leave."
 
-        e "Um..."
+        "Angie turns over the table."
 
-        a "Yeah. You're right. That's... probably not it."
-        a "Man, this is... not very cash money."
-        a "Guess I'll just go stupid go crazy."
+        a "Ahhh!!!!"
+
+        "Underneath the table is a strange white blob... with legs."
+
+        e "What is that?? Some sort of jellyfish?"
+
+        a "No!"
 
         show a happy
-        a "*absolutely shreds it on the makeshift dancefloor that is a clearing between some overturned tables*"
 
-        e "Angie holy fuck how are you this good at dancing."
+        a "No!! It's an Eggdog!"
 
-        a "Y'know. Well, y'know."
-
-        e "You are so right. I do know."
-
-        a "Yes."
-
-        e "Well it looks like there isn't really anything to do here... could you show me some moves?"
-
-        a "Sure. What do you wanna know?"
-
-        e "Hm. What's that ballet move where you do the spin with your arms like a circle?"
-
-        a "Do you mean a pirouette?"
-
-        e "Yeah that!"
-
-        a "Okay... well let me show you."
-        a "*does it perfectly, but trips on a strange white blob at the very end*"
-        a "Huh?"
-
-        #show idle
-
-
-
-        d "Help... help me, please... I am in massive pain..."
-
-        a "Woah... is that an egg... dog? Oh wow, it's an Eggdog!"
-
-        e "Woah you found one?"
-
-        a "Yeah!"
-
-        d "I have mere minutes left to live... please help..."
-
-        a "Hang on little buddy, I think there's gotta be a first aid kit around here somewhere..."
-
-        e "Maybe check near the entrance?"
-
-        a "Good idea. I'll go run to get the kit. Emily, can you stay with the Eggdog while I'm gone?"
-
-        e "You got it."
-
-        hide a happy
-
-        d "Euuuuughhhhh..."
-        d "*extreme noises of pain*"
-        d "I must... tell you... what happened here..."
-
-        e "Holy shit, what happened? This place looks absolutely fucked!"
-
-        d "Yes... a monster came... a monster so horrifying it is undescribable..."
-
-        e "What did this monster look like?!"
-
-        d "Horrifying...and indescribable..."
-
-        "I had that one coming to me, didn't I?"
-
-        d "Please... find the Eggdogs this monster scared off... they are hiding..."
-
-        e "Where are they?! Motherfucker tell me!"
-
-        d "Let me finish... around here... in the convention center... they hide in fear..."
-
-        show a happy at left
-
-        a "I found the kit! We'll save you little guy. Just hang in a little longer!"
-        a "Let's take a look in here...for some reason it's filled with cheeto puffs. Hm. Don't like that."
-
-        e "Jesus Fucking Christ."
-
-        d "... I thought it would be funny when I filled it with puffs..."
-
-        show a angry
-        a "Why would you do that?! You're saying that you're the one who filled this with cheese puffs?"
-
-        e "Yeah I think that's what they're saying..."
-
-        a ".... I - hm. No. I'm. I'm... angry?"
-        a "I can't... I mean i just can't - like why would you do that?"
-
-        e "Hey, they said they thought it'd be funny."
-
-        a "Wh- but. It's... You're dying! You're actually dying! Do you... still think this is funny?"
-
-        d "...a little bit...."
-
-        a "Pardon my language but... screw you!"
-
-        e "... Angie, are you ok?"
-
-        a "I thought we were gonna have a fun afternoon with some eggdogs, but instead it's, it's this!"
-
-        e "Angie..."
-        e "Girl, you're right. Fuck this shit. Today has been total garbage."
-
-        a "Absolute garbage! The worst!"
-
-        e "Fuck it. When all this is over, we're going to Fuku tea together, on me. Anything you want."
-
-        a "No, I can't make you pay that...!"
-
-        e "Fuck you. You're my friend, bitch, and I wanna cheer you up. I'm goddamn paying."
-
-        a "Alright..."
-
-        e "Okay. Boba later. Got it. Now back to this punk. What's your name again?"
-
-        d "Call me... Begg..."
-
-        a "... as in Egg, but with a B?"
-
-        d "As I was saying... please find my comrades... you'll find an Eggdogdex in my pocket..."
-        d "This dex has the names of all the conventiongoers registered... with it you'll be able to find everyone..."
-        d "...I will... now be... passing.... away..."
-
-        e "BEGG WHAT THE FUCK STOP THAT RIGHT NOW -"
-
-        d "Eurghhh....."
-
-        "..."
-        "..."
-        "..."
-
-
-        hide idle
-
-        e "Fuck. I think. I think Begg's fucking dead."
+        d "Help... help me, please..."
 
         show a sad
 
-        a "Oh... oh my gosh..."
+        d "Euuuuughhhhh..."
 
-        "There's only one thing to do from here, then."
-        "Eggdogdex... huh? That must be the thing in Begg's pocket..."
+        a "What happened? You... this place... everything looks terrible!"
 
-        e "Here, help me read this Dex."
+        d "Yes, a horrid beast, so grotesque, it makes my spine shiver even thinking about it right now... if I had a spine."
 
-        a "Yeah... sure."
+        a "Where is everyone?"
 
-        e "Alright girl. Let's go and save some fucking eggdogs."
+        d "Gone."
 
-        hide a sad
+        e "Gone how?"
+
+        d "Just gone... That pixelated creature whisked them away... You gotta help me!"
+
+        e "How can we help you?"
+
+        d "...find them..."
+
+        a "Where?!"
+
+        d "*exhales*"
+
+        hide idle
+
+        e "*grabs Eggdog's body and shakes it profusely* NONONONONO you can't die on me like this, it's too SOON!! You have so much to live for!"
+
+        "Everything is silent."
+
+        e "..."
+
+        a "..."
+
+        d "zzzzzzz"
+
+        a "Oh thank god, he's just sleeping!"
+
+        "Eggdog turns over in its sleep, something falls out of its pocket."
+
+        e "What's that?"
+
+        "Emily picks up BEGG'S EGGDOGDEX from the ground."
+
+        a "Huh. I guess its name is Begg."
+
+        e "What? How can you tell?"
+
+        a "I guess it's the big masking tape on the back of it with the word BEGG written in Sharpie. XD"
+
+        show a thinking
+
+        e "How do you work this thing?"
+
+        "Eggdogdex powers up."
+
+        a "Wow! This dex has the names of all the conventiongoers in it! With this, we'll be able to find everyone!"
+
+        e "Let's go!"
+
+
         jump eggdogdex
 
 label eggdogdex:
@@ -618,7 +515,7 @@ if epath:
 
     show e happy at left
     e "We got all the eggdogs!"
-    e "Man... if only Begg were here to see it. They would've been proud."
+    e "If only Begg was awake to see all of this it would've been proud."
 
     a "Yeah... they sure would have. Thank you for helping me do this."
 
@@ -650,11 +547,34 @@ if epath:
 
     "I sure hope nothing interrupts us while we walk towards the exit."
 
+    "You hear a quiet voice call your name...Angie..."
+
+    #HERE OVERHAULING DIALOGUE
+
     show a deep at center
 
     "Ah. Nevermind."
 
-    e "Woah what the fuck is that? Oh shit- it's attacking me; quick, Angie, we gotta fight back!"
+    a "Woah what is that? Begg was right - it is hideous!"
+
+    "PUNY HUMANS... YOU'RE ABOUT TO WITNESS HISTORY!"
+
+    e "Wait, that face kinda looks familiar! But it's ~so~ ugly!!"
+
+    "SILENCE!!! *a dark chuckle resonates through the air*"
+
+    "You shiver????"
+
+    a "??????"
+
+    A "EXCUSE ME. I. AM. YOU!!!"
+
+    a "Oh sorry!!"
+
+    "One of Deepfake Angie's arms clobbers Emily, pushing her to the ground. Emily gasps."
+
+    e "Shitshitshitshit; quick, Angie, we gotta fight back!"
+
     hide a deep
     hide e happy
     jump ending
@@ -665,7 +585,7 @@ else:
 
     show a happy at left
     a "We got all the eggdogs :D"
-    a "I wish Begg were here to see it. Even if they were kind of a jerk, they would've been proud."
+    a "I can't for when Begg wakes up! Begg's going to be so stoked that its Eggdogdex is complete!"
 
     e "Heck yeah they sure would have. Thanks for helping me find all the Eggdogs!"
 
@@ -725,9 +645,10 @@ label ending:
 
 
 if epath:
-    show emDeepfake movie
+    show angDeepfake movie
     e "conversation pending"
 
+    """
     scene bg stever double
     play music dorm
 
@@ -774,11 +695,12 @@ if epath:
 
     hide e happy
     hide a happy
+    """
     jump credits
 
 else:
 
-    show angDeepfake movie
+    show emDeepfake movie
 
     a "conversation pending"
 
