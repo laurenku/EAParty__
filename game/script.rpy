@@ -157,6 +157,174 @@ image idle:
     0.1
     repeat
 
+image attack1:
+    "attack1/attack1_ 00.png"
+    size(1041.3,663.3)
+    0.1
+    "attack1/attack1_ 01.png"
+    size(1041.3,663.3)
+    0.1
+    "attack1/attack1_ 02.png"
+    size(1041.3,663.3)
+    0.1
+    "attack1/attack1_ 03.png"
+    size(1041.3,663.3)
+    0.1
+    "attack1/attack1_ 04.png"
+    size(1041.3,663.3)
+    0.1
+    "attack1/attack1_ 05.png"
+    size(1041.3,663.3)
+    0.1
+    "attack1/attack1_ 06.png"
+    size(1041.3,663.3)
+    0.1
+    "attack1/attack1_ 07.png"
+    size(1041.3,663.3)
+    0.1
+    "attack1/attack1_ 08.png"
+    size(1041.3,663.3)
+    0.1
+    "attack1/attack1_ 09.png"
+    size(1041.3,663.3)
+    0.1
+    "attack1/attack1_ 10.png"
+    size(1041.3,663.3)
+    0.1
+    "attack1/attack1_ 11.png"
+    size(1041.3,663.3)
+    0.1
+    "attack1/attack1_ 12.png"
+    size(1041.3,663.3)
+    0.1
+    "attack1/attack1_ 13.png"
+    size(1041.3,663.3)
+    0.1
+    "attack1/attack1_ 14.png"
+    size(1041.3,663.3)
+    0.1
+    repeat
+
+image attack2:
+    "attack2/attack2_ 03.png"
+    size(1041.3,663.3)
+    0.1
+    "attack2/attack2_ 04.png"
+    size(1041.3,663.3)
+    0.1
+    "attack2/attack2_ 05.png"
+    size(1041.3,663.3)
+    0.1
+    "attack2/attack2_ 06.png"
+    size(1041.3,663.3)
+    0.1
+    "attack2/attack2_ 07.png"
+    size(1041.3,663.3)
+    0.1
+    "attack2/attack2_ 08.png"
+    size(1041.3,663.3)
+    0.1
+    "attack2/attack2_ 09.png"
+    size(1041.3,663.3)
+    0.1
+    "attack2/attack2_ 10.png"
+    size(1041.3,663.3)
+    0.1
+    "attack2/attack2_ 11.png"
+    size(1041.3,663.3)
+    0.1
+    "attack2/attack2_ 12.png"
+    size(1041.3,663.3)
+    0.1
+    "attack2/attack2_ 13.png"
+    size(1041.3,663.3)
+    0.1
+    "attack2/attack2_ 14.png"
+    size(1041.3,663.3)
+    0.1
+    "attack2/attack2_ 15.png"
+    size(1041.3,663.3)
+    0.1
+    "attack2/attack2_ 16.png"
+    size(1041.3,663.3)
+    0.1
+    repeat
+
+image attack3:
+    "attack3/attack3_ 00.png"
+    size(1041.3,663.3)
+    0.1
+    "attack3/attack3_ 01.png"
+    size(1041.3,663.3)
+    0.1
+    "attack3/attack3_ 02.png"
+    size(1041.3,663.3)
+    0.1
+    "attack3/attack3_ 03.png"
+    size(1041.3,663.3)
+    0.1
+    "attack3/attack3_ 04.png"
+    size(1041.3,663.3)
+    0.1
+    "attack3/attack3_ 05.png"
+    size(1041.3,663.3)
+    0.1
+    "attack3/attack3_ 06.png"
+    size(1041.3,663.3)
+    0.1
+    "attack3/attack3_ 07.png"
+    size(1041.3,663.3)
+    0.1
+    "attack3/attack3_ 08.png"
+    size(1041.3,663.3)
+    0.1
+    "attack3/attack3_ 09.png"
+    size(1041.3,663.3)
+    0.1
+    "attack3/attack3_ 10.png"
+    size(1041.3,663.3)
+    0.1
+    "attack3/attack3_ 11.png"
+    size(1041.3,663.3)
+    0.1
+    "attack3/attack3_ 12.png"
+    size(1041.3,663.3)
+    0.1
+    "attack3/attack3_ 13.png"
+    size(1041.3,663.3)
+    0.1
+    "attack3/attack3_ 15.png"
+    size(1041.3,663.3)
+    0.1
+    "attack3/attack3_ 16.png"
+    size(1041.3,663.3)
+    0.1
+    "attack3/attack3_ 17.png"
+    size(1041.3,663.3)
+    0.1
+    "attack3/attack3_ 18.png"
+    size(1041.3,663.3)
+    0.1
+    "attack3/attack3_ 19.png"
+    size(1041.3,663.3)
+    0.1
+    "atack3/attack3_ 20.png"
+    size(1041.3,663.3)
+    0.1
+    "atack3/attack3_ 21.png"
+    size(1041.3,663.3)
+    0.1
+    "atack3/attack3_ 22.png"
+    size(1041.3,663.3)
+    0.1
+    "atack3/attack3_ 23.png"
+    size(1041.3,663.3)
+    0.1
+    "atack3/attack3_ 24.png"
+    size(1041.3,663.3)
+    0.1
+    repeat
+
 image bg convention = "bg convention.jpg"
 image bg deepfake = "deepfake.png"
 image bg fantasy = "bg fantasy.jpg"
