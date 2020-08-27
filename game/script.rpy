@@ -696,7 +696,7 @@ label eggdogdex:
 if epath:
     #pokemon battle scene starts
     scene aPokemonBG
-    "A wild ... appears!"
+    "A wild Kpop Eggdog appears!"
 
 
     #pokemon battle scene ends
@@ -846,6 +846,9 @@ if epath:
     show angDeepfake movie
     e "conversation pending"
 
+    scene black
+    #PUT HAPPY BIRTHDAY SONG HERE:
+
 
     # scene bg stever double
     # play music dorm
@@ -902,7 +905,11 @@ else:
 
     a "conversation pending"
 
-    # scene black
+
+    scene black
+    #PUT HAPPY BIRTHDAY SONG HERE:
+
+
     # scene bg fuku
     # play music dorm
     #
