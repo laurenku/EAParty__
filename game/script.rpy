@@ -29,8 +29,8 @@ image e laughing = "elaughing.png"
 image e sad = "esad.png"
 image e thinking = "ethinking.png"
 
-#image edog = "dyingdog.png"
-#image edog movie = Movie(play="idle.webm")
+image conventionStill = "ConventionBackgroundStill.jpg"
+
 image idle:
     "output-onlineimagetools.png"
     size(1041.3,663.3)
@@ -167,6 +167,10 @@ image poke transition= "poke transition.png"
 
 image ticket = "ticket.png"
 
+image emDeepfake movie = Movie(size=(1280,720), play="AngieDeepFakeConversation.webm")
+
+image angDeepfake movie = Movie(size=(1280,720), play="EmilyDeepFakeConversation.webm")
+
 # The game starts here.
 
 label start:
@@ -220,25 +224,19 @@ if epath:
 
     show e happy at left
 
-    e "Today's the eggdog convention! How dare you be late!"
+    a "Huh? What time is it?"
 
-    "She's holding a pair of deconstructed shoeboxes... that must be the source of the loud noise."
+    e "It's 11! We're late for the eggdog convention!"
 
-    e "Angie you're always really on top of things! It's funny, usually you're the one dragging me out of bed!"
-    e "You're such a boss... like you wake up at 8 am everyday! It's too powerful..."
+    a "Wait what? I thought I set my alarm to wake me up at 10."
 
-    a "Well, you know me too well aha..."
-    a "I thought the convention started at 1?"
+    e "ER MAH GERD, you set your alarm to 10 *PM*"
 
-    e "Yeah me too, but I was just looking at the ticket and it actually starts at 11!"
+    e "Angie you're always really on top of things! It's funny, usually you're the one dragging me out of bed! You're such a boss... like you wake up at 8 am everyday! It's too powerful..."
 
-    show ticket
+    #a "Well, you know me too well aha..."
 
-    e "See how the 1 looks scratched out? That must be how we missed it!"
-
-    a "Ohhhh... yeah that makes sense. I wonder why the print job is so bad..."
-
-    e "Who cares? Let's go!"
+    e "Let's go!"
 
     hide e happy
 
@@ -254,49 +252,59 @@ else:
 
     show a happy at left
 
-    a "Come on, the eggdogs wait for noone! ʕ•́ᴥ•̀ʔっ"
+    a "Come on, the eggdogs wait for no one! ʕ•́ᴥ•̀ʔっ"
 
     "Ughhh... Angie I love you but just five more minutes please..."
 
+    a "..."
+
     e "Urbffghh... amgy m lumf oo buh just five more minutes please..."
 
-    a "I already gave you five! っ-̶●̃益●̶̃)っ That's it, you're getting up!≧◉ᴥ◉≦"
+    a "I already gave you five! っ-̶●̃益●̶̃)っ That's it, you're getting up! ≧◉ᴥ◉≦"
 
     "You still don't understand how she does those emoticons out loud..."
 
     e "Okay okay I'm up... have mercy, please..."
+
+    e "What time does the convention start?"
+
+    a "11."
+
+    e "..."
+
+    a "..."
+
     e "I thought the convention started at 1?"
 
-    a "Ah, me too, but it's actually at 11."
-    a "It looks like you accidentally spilled whiteout on the ticket earlier, and that's why you thought that."
+    a "It be at 11."
 
-    show ticket
+    e "..."
 
-    a "Here, you can take a look at it if you want!"
+    a "..."
 
-    e "Huh.. shit, you're right!"
+    e "Huh.."
 
-    a "Okay! I've already showered and changed, so I'll go ahead and call an uber.️"
+    a "Don't worry, I'm sure we won't miss anything in the first 30 minutes."
 
-    e "Wait, but then won't the driver be here in like, only 10 minutes?!"
+    a "You better get a move on! (ง︡'-'︠)ง"
 
-    a "Yup! So you better get a move on! (ง︡'-'︠)ง"
-
-    e "Holy shit girl - "
     hide a happy
     jump con
 
 label con:
 
-    scene black
+    #scene black
 
     show conv transition
+
+    show conventionStill
 
     if epath:
         e "We're here!"
 
         scene bg convention
         play music convention
+        show idle
 
         show e thinking at left
         e "Wow, this place looks like shit. Damn, what the hell happened here? This is even worse than Dashcon."
@@ -304,36 +312,23 @@ label con:
         a "Oof yeah... geez I can really see what you mean."
 
         show e angry
-        e "Is this gonna turn out like Fyre Festival? I hope they give us a refund... like I'm not rich enough"
-        e "to afford being scammed like this!"
+        e "I'm never trusting Google reviews again! I hope they give us a refund... in this economy?"
 
-        a "Yeahhh... me neither :/"
-
-        e "Imagine being rich... like I could evade taxes... probably be able to play water polo all day..."
-        e "Like how nice is that?"
-
-        a "Ooooh yeah... be able to pay off your student debt, too."
+        a "Yeahhh... can't afford to get scammed right now :/"
 
         e "Goddamn. My broke ass could never."
         e "*cries in broke*"
 
-        a "There, there."
+        a "*also cries in broke*"
 
-        e "*continues to cry in broke*"
 
-        a "At least you'll get to do awesome art?"
 
-        show e happy
-        e "You're right! Goddamn... I'm already doing the least amount of art for my major LMAO"
-        e "Everytime I'm doing homework for 112 I look around and I'm like..."
-        e "I'm too much of an art student for this, are you kidding me?"
-        e "And then everytime I'm in a crit, I'm like, 'I'm a CS student, I can't do this shit!'"
+        show e thinking
+        #REPLACE WITH E SURPRISED/STARTLED
+        e "Oh my god! What is that?"
 
+        #fixing script, left off here
         d "Help... help me, please... I am in massive pain..."
-
-        show idle
-
-
 
         e "Woah! Angie, there's an egg next to you! But I think it's a ... dog?"
 
@@ -435,6 +430,7 @@ label con:
 
         scene bg convention
         play music convention
+        show idle
 
         show a thinking at left
 
@@ -483,7 +479,7 @@ label con:
         a "*does it perfectly, but trips on a strange white blob at the very end*"
         a "Huh?"
 
-        show idle
+        #show idle
 
 
 
@@ -724,10 +720,14 @@ else:
 
 label ending:
 
-scene bg deepfake
-"So imagine this is where the deepfake battle happens."
+#scene bg deepfake
+#"So imagine this is where the deepfake battle happens."
+
 
 if epath:
+    show emDeepfake movie
+    e "conversation pending"
+
     scene bg stever double
     play music dorm
 
@@ -777,6 +777,11 @@ if epath:
     jump credits
 
 else:
+
+    show angDeepfake movie
+
+    a "conversation pending"
+
     scene black
     scene bg fuku
     play music dorm
