@@ -334,6 +334,8 @@ image bg fuku = "bg fuku.png"
 image bg stever double = "dorm.png"
 image conv transition= "conv transition.png"
 image poke transition= "poke transition.png"
+image ePokemonBG = "EmilyPokemonBG.png"
+image aPokemonBG = "AngiePokemonBG.jpg"
 
 image transition2 movie = Movie(size=(1280,720), play="Transition2again.webm", image="bg convention.jpg", loop=False)
 image transition1 movie = Movie(size=(1280,720), play="Transition1.webm", loop=False)
@@ -692,6 +694,12 @@ label eggdogdex:
     "eggdogs and shit"
 
 if epath:
+    #pokemon battle scene starts
+    scene aPokemonBG
+    "A wild ... appears!"
+
+
+    #pokemon battle scene ends
 
     scene bg convention
     play music dorm
@@ -763,6 +771,13 @@ if epath:
     jump ending
 
 else:
+    #pokemon battle scene starts
+    scene ePokemonBG
+    "A wild Torchy Eggdog appears!"
+
+
+    #pokemon battle scene ends
+
     scene bg convention
     play music dorm
 
