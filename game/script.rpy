@@ -338,8 +338,8 @@ image eggdogdex = "Eggdogdex.jpg"
 image ePokemonBG = "EmilyPokemonBG.png"
 image aPokemonBG = "AngiePokemonBG.jpg"
 
-image aDogProps = "aDogProps4.png"
-image eDogProps = "eDogProps4.png"
+image aDogProps = "aDogProps0.png"
+image eDogProps = "eDogProps0.png"
 
 image bdayCard = "bdayCard.jpg"
 
@@ -504,7 +504,7 @@ label con:
 
 
         #scene bg convention
-        play music convention fadein 1.0
+        play music convention fadeout 1.0 fadein 1.0
         #show idle
 
         e "We're here!"
@@ -564,7 +564,7 @@ label con:
 
         d "*exhales*"
 
-        hide idle
+        hide idle with dissolve
 
         e "*grabs Eggdog's body and shakes it profusely* NONONONONO you can't die on me like this, it's too SOON!! You have so much to live for!"
 
@@ -668,7 +668,7 @@ label con:
 
         d "*exhales*"
 
-        hide idle
+        hide idle with dissolve
 
         e "*grabs Eggdog's body and shakes it profusely* NONONONONO you can't die on me like this, it's too SOON!! You have so much to live for!"
 
@@ -730,15 +730,15 @@ label battle30Health:
         #show angie's eggdog
         #show 30 health bar
         menu angieAttackOptions:
-            "Angies's attack option 1":
+            "SARANGHAE <3":
                     hide attack1
                     jump battle20Health
 
-            "Angies's attack option 2":
+            "BOBA BRIBE":
                     hide attack1
                     jump battle20Health
 
-            "Angies's attack Option 3":
+            "A VERY NICE COMPLIMENT":
                     hide attack1
                     jump battle20Health
     else:
@@ -750,15 +750,15 @@ label battle30Health:
         #show torchy eggdog
         #show 30 health bar
         menu emilyAttackOptions:
-            "Emily's attack option 1":
+            "CONK":
                     hide attack1
                     jump battle20Health
 
-            "Emily's attack option 2":
+            "SUBLIME TEXT EDITOR":
                     hide attack1
                     jump battle20Health
 
-            "Emily's attack Option 3":
+            "AND ONE SPICY BOI":
                     hide attack1
                     jump battle20Health
 
@@ -768,41 +768,41 @@ label battle20Health:
         scene aPokemonBG
         show attack2
         show aDogProps
-        "You did some damage."
-        "Kpop Eggdog uses..."
+        "Critical hit!"
+        "Kpop Eggdog used YA GOT NO JAMS."
         #hide 30 health bar
         #show 20 health bar
         menu angieAttackOptions2:
-            "Angies's attack option 1":
+            "SARANGHAE <3":
                     hide attack2
                     jump battle10Health
 
-            "Angies's attack option 2":
+            "BOBA BRIBE":
                     hide attack2
                     jump battle10Health
 
-            "Angies's attack Option 3":
+            "A VERY NICE COMPLIMENT":
                     hide attack2
                     jump battle10Health
     else:
         scene ePokemonBG
         show attack2
         show eDogProps
-        "You did some damage."
-        "Torchy's Eggdog uses do-si-do."
+        "Critical hit!"
+        "Torchy's Eggdog used TACO CRUNCH."
         #hide 30 health bar
         #show 20 health bar
         menu emilyAttackOptions2:
 
-            "Emily's attack option 1":
+            "CONK":
                     hide attack2
                     jump battle10Health
 
-            "Emily's attack option 2":
+            "SUBLIME TEXT EDITOR":
                     hide attack2
                     jump battle10Health
 
-            "Emily's attack Option 3":
+            "AND ONE SPICY BOI":
                     hide attack2
                     jump battle10Health
 
@@ -812,40 +812,40 @@ label battle10Health:
         scene aPokemonBG
         show attack3
         show aDogProps
-        "You did some more damage."
-        "Kpop Eggdog uses [ultimate dance move]."
+        "It's super effective!"
+        "Kpop Eggdog used ITZY SHOULDER DANCE."
         #hide 20 health bar
         #show 10 health bar
         menu angieAttackOptions3:
 
-            "Angies's attack option 1":
+            "SARANGHAE <3":
                     hide attack3
                     jump battle0Health
 
-            "Angies's attack option 2":
+            "BOBA BRIBE":
                     hide attack3
                     jump battle0Health
 
-            "Angies's attack Option 3":
+            "A VERY NICE COMPLIMENT":
                     hide attack3
                     jump battle0Health
     else:
         scene ePokemonBG
         show attack3
         show eDogProps
-        "You did some more damage."
-        "Torchy's Eggdog uses yeehaw."
+        "It's super effective!"
+        "Torchy's Eggdog used YEEHAW."
         menu emilyAttackOptions3:
 
-            "Emily's attack option 1":
+            "CONK":
                     hide attack3
                     jump battle0Health
 
-            "Emily's attack option 2":
+            "SUBLIME TEXT EDITOR":
                     hide attack3
                     jump battle0Health
 
-            "Emily's attack Option 3":
+            "AND ONE SPICY BOI":
                     hide attack3
                     jump battle0Health
 
@@ -906,38 +906,58 @@ if epath:
 
     hide e happy
 
-    "I sure hope nothing interrupts us while we walk towards the exit."
+    play music danger fadeout 1.0 fadein 10.0
 
     "You hear a quiet voice call your name...Angie..."
 
-    #FIX DIALOGUE HERE
+    "Angie..."
+    a "What is that voice??"
+    e "Who are you?"
+    "MUAHAHAHA YOU'RE TOO LATE. I'VE ALREADY HARVESTED THE ESSENCE FROM ALL THOSE SOFT EGGDOGS."
+
+    a "No... you're wrong! We found all the eggdogs and we released them from your spell!"
+
+    "HAHAHAHA THAT WAS ALL A DIVERSION. YOU NEVER KNEW WHAT THE PURPOSE OF THIS ENTIRE CONVENTION WAS DIDN'T YOU?"
+
+    e "What??? Isn't it just a place for eggdog enthusiasts to get free stickers and merch???"
+
+    "WELL, YES, BUT I BET YOU DIDN'T EVEN READ THE BROCHURE FOR THE VENUE."
+
+    e "You got us there."
+
+    "THE CONVENTION WAS ALSO WHERE EGGDOG TECH WAS GOING TO REVEAL THEIR NEWEST EGGDOGINATOR THAT CAN TURN EGGS INTO EGGDOGS."
+
+    e "What???? How did we not hear about this."
+    a "Is this what happened when we were late??"
+
+    "YOU SEE, THE EGGDOGINATOR RUNS OF EGGDOGINITE, A POWERFUL GEMSTONE WORSHIPPED BY MAN AND EGGDOG ALIKE. BUT INSTEAD OF TURNING EGGS INTO USELESS EGGDOGS I'VE HARNESSED THE EGGDOGINITE TO ITS FULL POTENTIAL..."
+    "AND I'M GOING TO USE ITS POWER TO WIPE THIS SAD CONVENTION AND ALL THE EGGDOGS OFF THE FACE OF THE PLANET. PUNY HUMANS YOU'RE ABOUT TO WITNESS HISTORY."
+
+    a "Why are you doing this???"
+
+    "WHY AM I DOING THIS?? YOU'RE REALLY ASKING ME THAT RIGHT NOW??? HAHA... BWAHAHAHAHA...!!! BECAUSE I CAN!!"
+
+    a "Show your face you coward!"
 
     show a deep at center
 
+    a "..."
+    a "Omg Begg was right - it is hideous."
 
-    "Ah. Nevermind."
+    a "You can kidnap the eggdogs, you can even take the eggdoginite, but I'm not going to let you destroy this planet."
 
-    a "Woah what is that? Begg was right - it is hideous!"
+    e "Angie.... that face looks familiar."
 
-    "PUNY HUMANS... YOU'RE ABOUT TO WITNESS HISTORY!"
+    a "Be quiet I'm in the middle of my rant."
+    a "And I'm gonna stop you, you hideous beast!!!"
 
-    e "Wait, that face kinda looks familiar! But it's ~so~ ugly!!"
+    "SILENCE... HAHAHAHAHAHAHA you fool... I AM YOU."
 
-    "SILENCE!!! *a dark chuckle resonates through the air*"
+    a ":0"
+    e ":0"
 
-    "You shiver????"
+    A "PREPARE TO DIE."
 
-    a "??????"
-
-    A "EXCUSE ME. I. AM. YOU!!!"
-
-    a "Oh sorry!!"
-
-    "One of Deepfake Angie's arms clobbers Emily, pushing her to the ground. Emily gasps."
-
-    e "Shitshitshitshit; quick, Angie, we gotta fight back!"
-
-    #TO HERE
 
     hide a deep
     hide e happy
@@ -999,16 +1019,59 @@ else:
 
     hide a happy
 
-    "I sure hope nothing interrupts us while we walk towards the exit."
+    #NEW
+
+    play music danger fadeout 1.0 fadein 10.0
+
+    "You hear a quiet voice call your name...Emily..."
+
+    "Emily..."
+    e "What is that voice??"
+    a "Who are you?"
+    "MUAHAHAHA YOU'RE TOO LATE. I'VE ALREADY HARVESTED THE ESSENCE FROM ALL THOSE SOFT EGGDOGS."
+
+    e "No... you're wrong! We found all the eggdogs and we released them from your spell!"
+
+    "HAHAHAHA THAT WAS ALL A DIVERSION. YOU NEVER KNEW WHAT THE PURPOSE OF THIS ENTIRE CONVENTION WAS DIDN'T YOU?"
+
+    a "What??? Isn't it just a place for eggdog enthusiasts to get free stickers and merch???"
+
+    "WELL, YES, BUT I BET YOU DIDN'T EVEN READ THE BROCHURE FOR THE VENUE."
+
+    a "You got us there."
+
+    "THE CONVENTION WAS ALSO WHERE EGGDOG TECH WAS GOING TO REVEAL THEIR NEWEST EGGDOGINATOR THAT CAN TURN EGGS INTO EGGDOGS."
+
+    a "What???? How did we not hear about this."
+    e "Is this what happened when we were late??"
+
+    "YOU SEE, THE EGGDOGINATOR RUNS OF EGGDOGINITE, A POWERFUL GEMSTONE WORSHIPPED BY MAN AND EGGDOG ALIKE. BUT INSTEAD OF TURNING EGGS INTO USELESS EGGDOGS I'VE HARNESSED THE EGGDOGINITE TO ITS FULL POTENTIAL..."
+    "AND I'M GOING TO USE ITS POWER TO WIPE THIS SAD CONVENTION AND ALL THE EGGDOGS OFF THE FACE OF THE PLANET. PUNY HUMANS YOU'RE ABOUT TO WITNESS HISTORY."
+    e "Why are you doing this???"
+
+    "WHY AM I DOING THIS?? YOU'RE REALLY ASKING ME THAT RIGHT NOW??? HAHA... BWAHAHAHAHA...!!! BECAUSE I CAN!!"
+
+    e "Show your face you coward!"
 
     show e deep at center
-    play music danger
 
-    "Ah. Nevermind."
+    e "!!!"
 
-    a "Oop - ah, darnit. This is - okay. It's attacking me. Hey Emily, can you help me fight the monster please?"
+    e "Omg Begg was right - it is hideous."
 
-    e "Oh yeah, of course, totally -!"
+    e "You can kidnap the eggdogs, you can even take the eggdoginite, but I'm not going to let you destroy this planet."
+
+    a "Emily.... that face looks familiar."
+
+    e "Be quiet I'm in the middle of my rant."
+    e "And I'm gonna stop you, you hideous beast!!!"
+
+    "SILENCE... HAHAHAHAHAHAHA you fool... I AM YOU."
+
+    e ":0"
+    a ":0"
+
+    E "PREPARE TO DIE."
 
     hide e deep
     hide a happy
@@ -1231,9 +1294,11 @@ else:
 
 label birthday:
     scene black
-    show bdayCard
+
+    show bdayCard with dissolve
+    window hide
+    pause(10)
     play music happybirthday fadeout 1.0 fadein 3.0
-    ""
     jump credits
 
 label credits:
