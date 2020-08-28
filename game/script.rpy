@@ -245,12 +245,12 @@ image attack2:
     "attack2/attack2_ 14.png"
     size(1041.3,663.3)
     0.1
-    "attack2/attack2_ 15.png"
-    size(1041.3,663.3)
-    0.1
-    "attack2/attack2_ 16.png"
-    size(1041.3,663.3)
-    0.1
+    # "attack2/attack2_ 15.png"
+    # size(1041.3,663.3)
+    # 0.1
+    # "attack2/attack2_ 16.png"
+    # size(1041.3,663.3)
+    # 0.1
     repeat
 
 image attack3:
@@ -311,21 +311,21 @@ image attack3:
     "attack3/attack3_ 19.png"
     size(1041.3,663.3)
     0.1
-    "atack3/attack3_ 20.png"
-    size(1041.3,663.3)
-    0.1
-    "atack3/attack3_ 21.png"
-    size(1041.3,663.3)
-    0.1
-    "atack3/attack3_ 22.png"
-    size(1041.3,663.3)
-    0.1
-    "atack3/attack3_ 23.png"
-    size(1041.3,663.3)
-    0.1
-    "atack3/attack3_ 24.png"
-    size(1041.3,663.3)
-    0.1
+    # "atack3/attack3_ 20.png"
+    # size(1041.3,663.3)
+    # 0.1
+    # "atack3/attack3_ 21.png"
+    # size(1041.3,663.3)
+    # 0.1
+    # "atack3/attack3_ 22.png"
+    # size(1041.3,663.3)
+    # 0.1
+    # "atack3/attack3_ 23.png"
+    # size(1041.3,663.3)
+    # 0.1
+    # "atack3/attack3_ 24.png"
+    # size(1041.3,663.3)
+    # 0.1
     repeat
 
 image bg convention = "bg convention.jpg"
@@ -334,9 +334,14 @@ image bg fantasy = "bg fantasy.jpg"
 image bg fuku = "bg fuku.png"
 image bg stever double = "dorm.png"
 image conv transition= "conv transition.png"
-image poke transition= "poke transition.png"
+image eggdogdex = "Eggdogdex.jpg"
 image ePokemonBG = "EmilyPokemonBG.png"
 image aPokemonBG = "AngiePokemonBG.jpg"
+
+image aDogProps = "aDogProps4.png"
+image eDogProps = "eDogProps4.png"
+
+image bdayCard = "bdayCard.jpg"
 
 image transition2 movie = Movie(size=(1280,720), play="Transition2again.webm", image="bg convention.jpg", loop=False)
 image transition1 movie = Movie(size=(1280,720), play="Transition1.webm", loop=False)
@@ -690,122 +695,158 @@ label con:
 label eggdogdex:
 
     scene black
-    show poke transition
+    show eggdogdex
 
-    "eggdogs and shit"
-    
+    "The Eggdogdex."
+
 #pokemon battle scene starts
 #feel free to change the scrpit of the battle
 #add dialoge of eggdog attacking back
 
-jump battle30Health
+    jump battle30Health
 
 
 label battle30Health:
     if epath:
         scene aPokemonBG
-        "A wild ... appears!"
+        "A wild Kpop Eggdog appears!"
+        show attack1
+        show aDogProps
         #show angie's eggdog
         #show 30 health bar
         menu angieAttackOptions:
             "Angies's attack option 1":
+                    hide attack1
                     jump battle20Health
-            
+
             "Angies's attack option 2":
+                    hide attack1
                     jump battle20Health
-            
+
             "Angies's attack Option 3":
+                    hide attack1
                     jump battle20Health
     else:
-        "A wild Torchy Eggdog appears!"
+        scene ePokemonBG
+
+        "A wild Torchy's Eggdog appears!"
+        show attack1
+        show eDogProps
         #show torchy eggdog
         #show 30 health bar
         menu emilyAttackOptions:
             "Emily's attack option 1":
+                    hide attack1
                     jump battle20Health
-            
+
             "Emily's attack option 2":
+                    hide attack1
                     jump battle20Health
-            
+
             "Emily's attack Option 3":
+                    hide attack1
                     jump battle20Health
-    
-    
+
+
 label battle20Health:
     if epath:
         scene aPokemonBG
+        show attack2
+        show aDogProps
         "You did some damage."
+        "Kpop Eggdog uses..."
         #hide 30 health bar
         #show 20 health bar
         menu angieAttackOptions2:
             "Angies's attack option 1":
+                    hide attack2
                     jump battle10Health
-            
+
             "Angies's attack option 2":
+                    hide attack2
                     jump battle10Health
-            
+
             "Angies's attack Option 3":
+                    hide attack2
                     jump battle10Health
     else:
         scene ePokemonBG
+        show attack2
+        show eDogProps
         "You did some damage."
+        "Torchy's Eggdog uses do-si-do."
         #hide 30 health bar
         #show 20 health bar
         menu emilyAttackOptions2:
 
             "Emily's attack option 1":
+                    hide attack2
                     jump battle10Health
-            
+
             "Emily's attack option 2":
+                    hide attack2
                     jump battle10Health
-            
+
             "Emily's attack Option 3":
+                    hide attack2
                     jump battle10Health
-    
-    
+
+
 label battle10Health:
     if epath:
         scene aPokemonBG
+        show attack3
+        show aDogProps
         "You did some more damage."
+        "Kpop Eggdog uses [ultimate dance move]."
         #hide 20 health bar
         #show 10 health bar
         menu angieAttackOptions3:
 
             "Angies's attack option 1":
+                    hide attack3
                     jump battle0Health
-            
+
             "Angies's attack option 2":
+                    hide attack3
                     jump battle0Health
-            
+
             "Angies's attack Option 3":
+                    hide attack3
                     jump battle0Health
     else:
         scene ePokemonBG
+        show attack3
+        show eDogProps
         "You did some more damage."
+        "Torchy's Eggdog uses yeehaw."
         menu emilyAttackOptions3:
 
             "Emily's attack option 1":
+                    hide attack3
                     jump battle0Health
-            
+
             "Emily's attack option 2":
+                    hide attack3
                     jump battle0Health
-            
+
             "Emily's attack Option 3":
+                    hide attack3
                     jump battle0Health
-    
-    
+
+
 label battle0Health:
     if epath:
         scene aPokemonBG
         #hide angie's eggdog
         #hide 10 health bar
-        "you caught the ... Eggdog!"
+        "You caught the Kpop Eggdog!"
     else:
         scene ePokemonBG
         #hide Torchy Eggdog
         #hide 10 health bar
-        "you caught the Torchy Eggdog!"
-        
+        "You caught the Torchy's Eggdog!"
+
 
 #pokemon battle scene ends
 
@@ -938,20 +979,21 @@ else:
 
     hide e deep
     hide a happy
+
     jump ending
 
 label ending:
-
+    scene black
+    play music danger
 #scene bg deepfake
 #"So imagine this is where the deepfake battle happens."
 
 
 if epath:
     show angDeepfake movie
-    play music happybirthday
     e "conversation pending"
 
-
+    hide angDeepfake
     # scene bg stever double
     # play music dorm
     #
@@ -999,13 +1041,14 @@ if epath:
     # hide e happy
     # hide a happy
 
-    jump credits
+    jump birthday
 
 else:
 
     show emDeepfake movie
-    play music happybirthday
     a "conversation pending"
+
+    hide emDeepfake movie
 
     # scene black
     # scene bg fuku
@@ -1076,6 +1119,13 @@ else:
     # hide e happy
     # hide a happy
 
+    jump birthday
+
+label birthday:
+    scene black
+    show bdayCard
+    play music happybirthday
+    ""
     jump credits
 
 label credits:
