@@ -914,7 +914,7 @@ if epath:
 
     hide e happy
 
-    play music danger fadeout 1.0 fadein 10.0
+    play music danger fadeout 8.0 fadein 10.0
 
     "You hear a quiet voice call your name...Angie..."
 
@@ -1029,7 +1029,8 @@ else:
 
     #NEW
 
-    play music danger fadeout 1.0 fadein 10.0
+    play music danger fadeout 8.0 fadein 10.0
+
 
     "You hear a quiet voice call your name... Emily..."
 
@@ -1121,24 +1122,21 @@ if epath:
     $ renpy.pause(delay=5, hard=True)
     "*battle ensues*"
     $ renpy.pause(delay=8, hard=True)
-    hide angDeepfake
+    hide angDeepfake with dissolve
 
-    stop music
-    scene black
-    ""
-    $ renpy.pause(delay=5, hard=True)
+    #stop music
 
-    play music dorm
+    play music dorm fadeout 1.0 fadein 1.0
     show angDeepfakeIdle movie with dissolve
     A "Bleh I’m deded. Take this treasure to remember our time together..."
     hide angDeepfakeIdle movie
     with dissolve
-    "DEEPFAKE ANGIE fades into dust, leaving behind a small piece of cardstock"
+    "DEEPFAKE ANGIE fades into dust, leaving behind a small piece of cardstock."
 
 
     e "Hmm it looks like a postcard addressed to…"
     e "You :)"
-    "Emily hands the card over to you"
+    "Emily hands the card over to you."
     "As you turns the card to the back it reads..."
     # scene bg stever double
     # play music dorm
@@ -1220,14 +1218,11 @@ else:
 
     "*battle ensues*"
     $ renpy.pause(delay=8, hard=True)
-    hide emDeepfake
+    hide emDeepfake with dissolve
 
-    stop music
-    scene black
-    ""
-    $ renpy.pause(delay=5, hard=True)
+    #stop music
 
-    play music dorm
+    play music dorm fadeout 1.0 fadein 1.0
     show emDeepfakeIdle movie with dissolve
     E "Bleh I’m deded. Take this treasure to remember our time together..."
     hide emDeepfakeIdle movie
