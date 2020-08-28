@@ -7,7 +7,7 @@ define e = Character("Emily", color="#3be5c6")
 define a = Character("Angie", color="#edb0d7")
 define d = Character("Mysterious Eggdog", color = "#737373")
 define A = Character("DEEPFAKE ANGIE", color="#d71d1d")
-define E = Character("DEEPFAKE EMILY", color="#1d1db6")
+define E = Character("DEEPFAKE EMILY", color="#213bff")
 
 define audio.bird = "audio/bird.wav"
 
@@ -364,9 +364,9 @@ label start:
 
     "You're sleeping..."
     "..."
-    "..."
-    "..."
-    "..."
+    "......"
+    "........."
+    "............"
     "...Is this the real life?"
     "Is this just fantasy?"
     "Caught in a landslide..."
@@ -566,7 +566,12 @@ label con:
 
         hide idle with dissolve
 
+        hide e thinking
+        show e sad at left
+
         e "*grabs Eggdog's body and shakes it profusely* NONONONONO you can't die on me like this, it's too SOON!! You have so much to live for!"
+
+
 
         "Everything is silent."
 
@@ -574,8 +579,10 @@ label con:
 
         a "..."
 
-        d "zzzzzzz"
 
+        d "zzzzzzz"
+        hide e sad
+        show e thinking at left
         a "Oh thank god, he's just sleeping!"
 
         "Eggdog turns over in its sleep, something falls out of its pocket."
@@ -590,7 +597,8 @@ label con:
 
         a "I guess it's the big masking tape on the back of it with the word BEGG written in Sharpie. XD"
 
-        show e thinking
+
+        #show e thinking
 
         e "How do you work this thing?"
 
@@ -931,7 +939,7 @@ if epath:
     a "Is this what happened when we were late??"
 
     "YOU SEE, THE EGGDOGINATOR RUNS OF EGGDOGINITE, A POWERFUL GEMSTONE WORSHIPPED BY MAN AND EGGDOG ALIKE. BUT INSTEAD OF TURNING EGGS INTO USELESS EGGDOGS I'VE HARNESSED THE EGGDOGINITE TO ITS FULL POTENTIAL..."
-    "AND I'M GOING TO USE ITS POWER TO WIPE THIS SAD CONVENTION AND ALL THE EGGDOGS OFF THE FACE OF THE PLANET. PUNY HUMANS YOU'RE ABOUT TO WITNESS HISTORY."
+    "AND I'M GOING TO USE ITS POWER TO WIPE THIS SAD CONVENTION AND ALL THE EGGDOGS OFF THE FACE OF THE PLANET. PUNY HUMANS! YOU'RE ABOUT TO WITNESS HISTORY."
 
     a "Why are you doing this???"
 
@@ -977,7 +985,7 @@ else:
     a "You're welcome~! This was fun. It felt like an epic quest!"
 
     e "Right?  We really did a heccin hecc... remember when that one doggy boi was too scared to go into into the Eggdogball,"
-    e "so you showed it that shiny thing and it felt better?"
+    e "So you showed it that shiny thing and it felt better?"
 
     a "Shiny thing... Oh my wallet?"
 
@@ -1046,7 +1054,7 @@ else:
     e "Is this what happened when we were late??"
 
     "YOU SEE, THE EGGDOGINATOR RUNS OF EGGDOGINITE, A POWERFUL GEMSTONE WORSHIPPED BY MAN AND EGGDOG ALIKE. BUT INSTEAD OF TURNING EGGS INTO USELESS EGGDOGS I'VE HARNESSED THE EGGDOGINITE TO ITS FULL POTENTIAL..."
-    "AND I'M GOING TO USE ITS POWER TO WIPE THIS SAD CONVENTION AND ALL THE EGGDOGS OFF THE FACE OF THE PLANET. PUNY HUMANS YOU'RE ABOUT TO WITNESS HISTORY."
+    "AND I'M GOING TO USE ITS POWER TO WIPE THIS SAD CONVENTION AND ALL THE EGGDOGS OFF THE FACE OF THE PLANET. PUNY HUMANS! YOU'RE ABOUT TO WITNESS HISTORY."
     e "Why are you doing this???"
 
     "WHY AM I DOING THIS?? YOU'RE REALLY ASKING ME THAT RIGHT NOW??? HAHA... BWAHAHAHAHA...!!! BECAUSE I CAN!!"
@@ -1080,7 +1088,7 @@ else:
 
 label ending:
     scene black
-    play music danger
+    #play music danger
 #scene bg deepfake
 #"So imagine this is where the deepfake battle happens."
 
@@ -1088,46 +1096,50 @@ label ending:
 if epath:
     show angDeepfake movie
 
-    A "PUNY HUMANS! GIVE UP AND I MIGHT CONSIDER SPARING YOU (as a consideration of our shared rugged good looks and impeccable fashion sense :0)"
+    A "GIVE UP AND I MIGHT CONSIDER SPARING YOU (as a consideration of our shared rugged good looks and impeccable fashion sense :0)"
     a "Uh... first of all, ew you look nothing like me and second of all we’re not going down without a fight!"
     A "YOU DARE MOCK ME, THE NEXT SUPREME RULER OF THE WORLD??"
     a "It wasn’t mocking; It was an honest judge of your appearance."
     e "YEAH WHO WANTS TO LOOK LIKE YOUR FUGLY ASS."
     a "... (; -_-)"
-    A  "THAT’S IT! PREPARE TO MEET YOUR DOOM"
+    A "THAT’S IT! PREPARE TO MEET YOUR DOOM"
     e "I can’t get a good enough angle on it...wait no...you...her...it??"
-    e "Ok Angie, looks like you’re gonna have to battle it on your own"
+    e "Ok Angie, looks like you’re gonna have to battle it on your own."
     a "Wait how am I supposed to take down a 60 ft deepfake of myself??"
     e "..."
     e "...I have no idea..."
     a "..."
     e "..."
     e "Wait I do have an idea! To defeat an eggdog conqueror-warlord, all you have to do is…"
-    a "stream dynamite?"
+    a "Stream dynamite?"
     e "...have an eggdog battle!"
     a "..."
     e "..."
-    a "yeah battle...that’s what I meant..."
+    a "Yeah battle...that’s what I meant..."
     e "...ok... well anyways battling seems like the only thing we can do for now so let's just try it."
-
-
+    window hide
+    $ renpy.pause(delay=5, hard=True)
+    "*battle ensues*"
+    $ renpy.pause(delay=8, hard=True)
     hide angDeepfake
 
     stop music
     scene black
     ""
+    $ renpy.pause(delay=5, hard=True)
+
     play music dorm
-    show angDeepfakeIdle movie
-    A "bleh omg I’m deded. Take this treasure to remember our time together..."
+    show angDeepfakeIdle movie with dissolve
+    A "Bleh I’m deded. Take this treasure to remember our time together..."
     hide angDeepfakeIdle movie
     with dissolve
-    "The Angie deepfake fades into dust, leaving behind a small piece of cardstock"
+    "DEEPFAKE ANGIE fades into dust, leaving behind a small piece of cardstock"
 
 
-    e "hmm it looks like a postcard addressed to…"
-    e "you"
-    "Emily hands over the card to Angie"
-    "As Angie turns the card to the back it reads..."
+    e "Hmm it looks like a postcard addressed to…"
+    e "You :)"
+    "Emily hands the card over to you"
+    "As you turns the card to the back it reads..."
     # scene bg stever double
     # play music dorm
     #
@@ -1180,44 +1192,51 @@ if epath:
 else:
 
     show emDeepfake movie
-    E "PUNY HUMANS! GIVE UP AND I MIGHT CONSIDER SPARING YOU (as a consideration of our shared rugged good looks and impeccable taste in the mems :0)"
+    E "GIVE UP AND I MIGHT CONSIDER SPARING YOU (as a consideration of our shared rugged good looks and impeccable taste in the mems :0)"
     e "Uh...first of all, ew you look nothing like me and second of all we’re not going down without a fight!"
     E "YOU DARE MOCK ME, THE NEXT SUPREME RULER OF THE WORLD??"
     e "Yeah! What are you gonna do about it, fake me? Shrink down and fight me!"
     a "YEAH! WE AREN’T AFRAID OF YOUR FAKE ASS."
     e "...Angie...I’m so touched"
-    a "aww you’re welcome anytime ≧◉ᴥ◉≦ "
+    a "Aww you’re welcome anytime ≧◉ᴥ◉≦ "
     E  "THAT’S IT! PREPARE TO MEET YOUR DOOM"
     a "I can’t get a good enough angle on it...wait no...you...her...it??"
-    a "Ok Emily, looks like you’re gonna have to battle it on your own"
+    a "Ok Emily, looks like you’re gonna have to battle it on your own."
     e "Wait how am I supposed to take down a 60 ft deepfake of myself??"
     a "..."
     a "...I have no idea..."
     e"..."
     a "..."
     a "Wait I do have an idea! To defeat an eggdog conqueror-warlord, all you have to do is…"
-    e "drincc bepis?"
+    e "Drincc bepis?"
     a "...have an eggdog battle!"
     e "..."
     a "..."
-    e "yeah battle...that’s what I meant..."
+    e "Yeah battle...that’s what I meant..."
     a "...ok...well anyways battling seems like the only thing we can do for now so lets just try it."
 
+    window hide
+    $ renpy.pause(delay=5, hard=True)
 
-    hide emDeepfake movie
+    "*battle ensues*"
+    $ renpy.pause(delay=8, hard=True)
+    hide emDeepfake
+
     stop music
     scene black
     ""
+    $ renpy.pause(delay=5, hard=True)
+
     play music dorm
-    show emDeepfakeIdle movie
-    E "bleh omg I’m deded. Take this treasure to remember our time together..."
+    show emDeepfakeIdle movie with dissolve
+    E "Bleh I’m deded. Take this treasure to remember our time together..."
     hide emDeepfakeIdle movie
     with dissolve
-    "The Emily deepfake fades into dust, leaving behind a small piece of cardstock"
-    a "hmm it looks like a postcard addressed to…"
-    a "you"
-    "Angie hands over the card to Emily"
-    "As Emily turns the card to the back it reads..."
+    "DEEPFAKE EMILY fades into dust, leaving behind a small piece of cardstock."
+    a "Hmm it looks like a postcard addressed to…"
+    a "You :)"
+    "Angie hands the card over to you."
+    "As you turns the card to the back it reads..."
 
 
 
@@ -1294,17 +1313,18 @@ else:
 
 label birthday:
     scene black
-
-    show bdayCard with dissolve
-    window hide
-    pause(10)
     play music happybirthday fadeout 1.0 fadein 3.0
+    show bdayCard with dissolve
+
+    window hide
+    pause(20)
+
     jump credits
 
 label credits:
 
 if epath:
-    play music acredits
+    play music acredits fadein 1.0
 
     $ credits_speed = 40
     scene black
@@ -1313,7 +1333,7 @@ if epath:
     with Pause(credits_speed+10)
 
 else:
-    play music ecredits
+    play music ecredits fadein 1.0
 
     $ credits_speed = 40
     scene black
