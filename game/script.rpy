@@ -591,7 +591,7 @@ label con:
 
         "Emily picks up BEGG'S EGGDOGDEX from the ground."
 
-        a "Huh. I guess its name is Begg."
+        a "Huh. I guess their name is Begg."
 
         e "What? How can you tell?"
 
@@ -698,7 +698,7 @@ label con:
 
         show a thinking
 
-        a "Huh. I guess its name is Begg."
+        a "Huh. I guess their name is Begg."
 
         e "What? How can you tell?"
 
@@ -880,13 +880,13 @@ if epath:
 
     show e happy at left
     e "We got all the eggdogs!"
-    e "If only Begg was awake to see all of this it would've been proud."
+    e "If only Begg was awake to see all of this they would've been proud."
 
     a "Yeah... they sure would have. Thank you for helping me do this."
 
     e "No problem! This was actually kinda fun. Like an epic quest!"
 
-    a "It was pretty thrilling... especially the part where that one doggy boi refused to go into into the Eggdogball..."
+    a "It was pretty thrilling... especially the part where that one doggy boi refused to go into the Eggdogball..."
 
     e "And we both had to sit on it so the Eggdogball wouldn't reopen! Man, that was so fun."
 
@@ -978,13 +978,13 @@ else:
 
     show a happy at left
     a "We got all the eggdogs :D"
-    a "I can't for when Begg wakes up! Begg's going to be so stoked that its Eggdogdex is complete!"
+    a "I can't for when Begg wakes up! Begg's going to be so stoked that their Eggdogdex is complete!"
 
     e "Heck yeah they sure would have. Thanks for helping me find all the Eggdogs!"
 
-    a "You're welcome~! This was fun. It felt like an epic quest!"
+    a "You're welcome! This was fun. It felt like an epic quest!"
 
-    e "Right?  We really did a heccin hecc... remember when that one doggy boi was too scared to go into into the Eggdogball,"
+    e "Right?  We really did a heccin hecc... remember when that one doggy boi was too scared to go into the Eggdogball,"
     e "So you showed it that shiny thing and it felt better?"
 
     a "Shiny thing... Oh my wallet?"
@@ -1013,7 +1013,7 @@ else:
 
     e "Hm. I sure hope so."
 
-    a "Hopefully that wont come back to bite us in the butt later."
+    a "Hopefully that won't come back to bite us in the butt later."
 
     e "Definitely."
 
@@ -1031,7 +1031,7 @@ else:
 
     play music danger fadeout 1.0 fadein 10.0
 
-    "You hear a quiet voice call your name...Emily..."
+    "You hear a quiet voice call your name... Emily..."
 
     "Emily..."
     e "What is that voice??"
@@ -1053,7 +1053,7 @@ else:
     a "What???? How did we not hear about this."
     e "Is this what happened when we were late??"
 
-    "YOU SEE, THE EGGDOGINATOR RUNS OF EGGDOGINITE, A POWERFUL GEMSTONE WORSHIPPED BY MAN AND EGGDOG ALIKE. BUT INSTEAD OF TURNING EGGS INTO USELESS EGGDOGS I'VE HARNESSED THE EGGDOGINITE TO ITS FULL POTENTIAL..."
+    "YOU SEE, THE EGGDOGINATOR RUNS ON EGGDOGINITE, A POWERFUL GEMSTONE WORSHIPPED BY MAN AND EGGDOG ALIKE. BUT INSTEAD OF TURNING EGGS INTO USELESS EGGDOGS I'VE HARNESSED THE EGGDOGINITE TO ITS FULL POTENTIAL..."
     "AND I'M GOING TO USE ITS POWER TO WIPE THIS SAD CONVENTION AND ALL THE EGGDOGS OFF THE FACE OF THE PLANET. PUNY HUMANS! YOU'RE ABOUT TO WITNESS HISTORY."
     e "Why are you doing this???"
 
