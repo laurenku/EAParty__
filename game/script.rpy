@@ -3,11 +3,11 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Emily", color="#27aa92")
+define e = Character("Emily", color="#3be5c6")
 define a = Character("Angie", color="#edb0d7")
 define d = Character("Mysterious Eggdog", color = "#737373")
-define A = Character("Deepfake Angie", color="#edb0d7")
-define E = Character("Deepfake Emily", color="#27aa92")
+define A = Character("DEEPFAKE ANGIE", color="#d71d1d")
+define E = Character("DEEPFAKE EMILY", color="#1d1db6")
 
 define audio.bird = "audio/bird.wav"
 
@@ -504,7 +504,7 @@ label con:
 
 
         #scene bg convention
-        play music convention
+        play music convention fadein 1.0
         #show idle
 
         e "We're here!"
@@ -596,6 +596,9 @@ label con:
 
         "Eggdogdex powers up."
 
+        show eggdogdex
+        with dissolve
+
         a "Wow! This dex has the names of all the convention goers in it! With this, we'll be able to find everyone!"
 
         e "Let's go!"
@@ -606,7 +609,7 @@ label con:
 
 
         #scene bg convention
-        play music convention
+        play music convention fadeout 1.0 fadein 1.0
         #show idle
 
         a "We made it!"
@@ -696,6 +699,8 @@ label con:
         e "How do you work this thing?"
 
         "Eggdogdex powers up."
+        show eggdogdex
+        with dissolve
 
         a "Wow! This dex has the names of all the convention goers in it! With this, we'll be able to find everyone!"
 
@@ -707,9 +712,7 @@ label con:
 label eggdogdex:
 
     scene black
-    show eggdogdex
 
-    "The Eggdogdex."
 
 #pokemon battle scene starts
 #feel free to change the scrpit of the battle
@@ -865,7 +868,7 @@ label battle0Health:
 if epath:
 
     scene bg convention
-    play music dorm
+    play music dorm fadeout 1.0 fadein 1.0
 
     show e happy at left
     e "We got all the eggdogs!"
@@ -943,7 +946,7 @@ if epath:
 else:
 
     scene bg convention
-    play music dorm
+    play music dorm fadeout 1.0 fadein 1.0
 
     show a happy at left
     a "We got all the eggdogs :D"
@@ -1046,13 +1049,15 @@ if epath:
 
 
     hide angDeepfake
-    #STOP MUSIC HERE, HOW?
+
+    stop music
     scene black
     ""
     play music dorm
     show angDeepfakeIdle movie
     A "bleh omg I’m deded. Take this treasure to remember our time together..."
     hide angDeepfakeIdle movie
+    with dissolve
     "The Angie deepfake fades into dust, leaving behind a small piece of cardstock"
 
 
@@ -1137,13 +1142,14 @@ else:
 
 
     hide emDeepfake movie
-    #stop music here, how???????
+    stop music
     scene black
     ""
     play music dorm
     show emDeepfakeIdle movie
     E "bleh omg I’m deded. Take this treasure to remember our time together..."
     hide emDeepfakeIdle movie
+    with dissolve
     "The Emily deepfake fades into dust, leaving behind a small piece of cardstock"
     a "hmm it looks like a postcard addressed to…"
     a "you"
@@ -1226,7 +1232,7 @@ else:
 label birthday:
     scene black
     show bdayCard
-    play music happybirthday
+    play music happybirthday fadeout 1.0 fadein 3.0
     ""
     jump credits
 
