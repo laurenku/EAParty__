@@ -14,6 +14,7 @@ define audio.bird = "audio/bird.wav"
 define audio.convention = "audio/convention.mp3"
 define audio.dorm = "audio/dorm.mp3"
 define audio.danger = "audio/danger.mp3"
+define audio.happybirthday = "audio/happybirthday.mp3"
 
 define epath = False
 
@@ -692,14 +693,123 @@ label eggdogdex:
     show poke transition
 
     "eggdogs and shit"
+    
+#pokemon battle scene starts
+#feel free to change the scrpit of the battle
+#add dialoge of eggdog attacking back
+
+jump battle30Health
+
+
+label battle30Health:
+    if epath:
+        scene aPokemonBG
+        "A wild ... appears!"
+        #show angie's eggdog
+        #show 30 health bar
+        menu angieAttackOptions:
+            "Angies's attack option 1":
+                    jump battle20Health
+            
+            "Angies's attack option 2":
+                    jump battle20Health
+            
+            "Angies's attack Option 3":
+                    jump battle20Health
+    else:
+        "A wild Torchy Eggdog appears!"
+        #show torchy eggdog
+        #show 30 health bar
+        menu emilyAttackOptions:
+            "Emily's attack option 1":
+                    jump battle20Health
+            
+            "Emily's attack option 2":
+                    jump battle20Health
+            
+            "Emily's attack Option 3":
+                    jump battle20Health
+    
+    
+label battle20Health:
+    if epath:
+        scene aPokemonBG
+        "You did some damage."
+        #hide 30 health bar
+        #show 20 health bar
+        menu angieAttackOptions2:
+            "Angies's attack option 1":
+                    jump battle10Health
+            
+            "Angies's attack option 2":
+                    jump battle10Health
+            
+            "Angies's attack Option 3":
+                    jump battle10Health
+    else:
+        scene ePokemonBG
+        "You did some damage."
+        #hide 30 health bar
+        #show 20 health bar
+        menu emilyAttackOptions2:
+
+            "Emily's attack option 1":
+                    jump battle10Health
+            
+            "Emily's attack option 2":
+                    jump battle10Health
+            
+            "Emily's attack Option 3":
+                    jump battle10Health
+    
+    
+label battle10Health:
+    if epath:
+        scene aPokemonBG
+        "You did some more damage."
+        #hide 20 health bar
+        #show 10 health bar
+        menu angieAttackOptions3:
+
+            "Angies's attack option 1":
+                    jump battle0Health
+            
+            "Angies's attack option 2":
+                    jump battle0Health
+            
+            "Angies's attack Option 3":
+                    jump battle0Health
+    else:
+        scene ePokemonBG
+        "You did some more damage."
+        menu emilyAttackOptions3:
+
+            "Emily's attack option 1":
+                    jump battle0Health
+            
+            "Emily's attack option 2":
+                    jump battle0Health
+            
+            "Emily's attack Option 3":
+                    jump battle0Health
+    
+    
+label battle0Health:
+    if epath:
+        scene aPokemonBG
+        #hide angie's eggdog
+        #hide 10 health bar
+        "you caught the ... Eggdog!"
+    else:
+        scene ePokemonBG
+        #hide Torchy Eggdog
+        #hide 10 health bar
+        "you caught the Torchy Eggdog!"
+        
+
+#pokemon battle scene ends
 
 if epath:
-    #pokemon battle scene starts
-    scene aPokemonBG
-    "A wild Kpop Eggdog appears!"
-
-
-    #pokemon battle scene ends
 
     scene bg convention
     play music dorm
@@ -771,12 +881,6 @@ if epath:
     jump ending
 
 else:
-    #pokemon battle scene starts
-    scene ePokemonBG
-    "A wild Torchy Eggdog appears!"
-
-
-    #pokemon battle scene ends
 
     scene bg convention
     play music dorm
@@ -844,10 +948,8 @@ label ending:
 
 if epath:
     show angDeepfake movie
+    play music happybirthday
     e "conversation pending"
-
-    scene black
-    #PUT HAPPY BIRTHDAY SONG HERE:
 
 
     # scene bg stever double
@@ -902,14 +1004,10 @@ if epath:
 else:
 
     show emDeepfake movie
+    play music happybirthday
+    a "conversation pending"
 
-    a "conversation pending..."
-
-
-    scene black
-    #PUT HAPPY BIRTHDAY SONG HERE:
-
-
+    # scene black
     # scene bg fuku
     # play music dorm
     #
