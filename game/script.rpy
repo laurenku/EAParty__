@@ -351,8 +351,10 @@ image transition1 movie = Movie(size=(1280,720), play="Transition1.webm", loop=F
 image ticket = "ticket.png"
 
 image emDeepfake movie = Movie(size=(1280,720), play="EmilyDeepFakeConversation.webm")
+image emDeepfakeIdle movie = Movie(size=(1280,720), play="EmilyDeepFakeIdle.webm")
 
 image angDeepfake movie = Movie(size=(1280,720), play="AngieDeepFakeConversation.webm")
+image angDeepfakeIdle movie = Movie(size=(1280,720), play="AngieDeepFakeIdle.webm")
 
 # The game starts here.
 
@@ -360,12 +362,22 @@ label start:
 
     play music dorm
 
-    "You're sleeping... man sleeping is great."
-    "Being a CMU student and everything, sleeping isn't something you get to do very often."
-    "Man, it would really suck if something or someone were come along right now and wake you up."
-    "Anyways..."
+    "You're sleeping..."
+    "..."
+    "..."
+    "..."
+    "..."
+    "...Is this the real life?"
+    "Is this just fantasy?"
+    "Caught in a landslide..."
+    "....Wait wasn’t there an essay due last night?"
+    "...."
+    "..."
+    "I’m just a little boy nobody loves me"
+    "..."
+    "But you are loved."
+    "Loved one, what is your name?"
 
-    "What's your name?"
 menu name_menu:
 
         "Angie, because you're an angel :)":
@@ -415,7 +427,7 @@ if epath:
 
     e "ER MAH GERD, you set your alarm to 10 *PM*"
 
-    e "Angie you're always really on top of things! It's funny, usually you're the one dragging me out of bed! You're such a boss... like you wake up at 8 am everyday! It's too powerful..."
+    e "Angie you're always really on top of things! It's funny, usually you're the one dragging me out of bed! Like you wake up at 8 am everyday! It's too powerful..."
 
     #a "Well, you know me too well aha..."
 
@@ -478,8 +490,8 @@ label con:
 
     #scene black
     scene bg convention
-    $ renpy.movie_cutscene("Transition1.webm", delay=14, loops=0, stop_music=False)
-    $ renpy.movie_cutscene("Transition2again.webm", delay=10, loops=0, stop_music=False)
+    #$ renpy.movie_cutscene("Transition1.webm", delay=14, loops=0, stop_music=False)
+    $ renpy.movie_cutscene("EggDogConvention2020.webm", delay=24, loops=0, stop_music=False)
     show bg convention
 
     #show transition1 movie
@@ -584,7 +596,7 @@ label con:
 
         "Eggdogdex powers up."
 
-        a "Wow! This dex has the names of all the conventiongoers in it! With this, we'll be able to find everyone!"
+        a "Wow! This dex has the names of all the convention goers in it! With this, we'll be able to find everyone!"
 
         e "Let's go!"
 
@@ -685,7 +697,7 @@ label con:
 
         "Eggdogdex powers up."
 
-        a "Wow! This dex has the names of all the conventiongoers in it! With this, we'll be able to find everyone!"
+        a "Wow! This dex has the names of all the convention goers in it! With this, we'll be able to find everyone!"
 
         e "Let's go!"
 
@@ -861,23 +873,25 @@ if epath:
 
     a "Yeah... they sure would have. Thank you for helping me do this."
 
-    e "No problem! This was actually kinda fun. Minus the 'saw a conscious being die in front of me part'. Like an epic quest!"
+    e "No problem! This was actually kinda fun. Like an epic quest!"
 
-    a "It was pretty thrilling... especially the part where that one doggy boi refused to go into into her Eggdoggball..."
+    a "It was pretty thrilling... especially the part where that one doggy boi refused to go into into the Eggdogball..."
 
-    e "And we both had to sit on it so the Eggdollball wouldn't reopen! Man, that was so fun."
+    e "And we both had to sit on it so the Eggdogball wouldn't reopen! Man, that was so fun."
 
     a "Maybe they should just do this for Eggdogcon every year!"
+    "...And the Universe unanimously agreed that that was a big brain strat..."
 
-    e "You are so big brain. I absolutely agree. It'll be like Easter except non religious and the eggs are alive!"
-    e "Hmmmmmm... advanced hide and seek.... my adventure brain likes this idea."
+    e "I absolutely agree. It'll be like Easter except non religious and with talking eggs..."
+    e "A zombie Easter...but with dogs!"
+    e "Hmmmmmm... advanced hide and seek.... me likey."
     e "That aside, I wonder what happened to the big monster who caused all this in the first place? Where did it go?"
 
     a "Maybe... it just left?"
 
-    e "Hm. I sure hope so. Anyways, that probably won't be plot relevant later."
+    e "Hm. I sure hope so. There no way this could come back to bite us in the ass later right?"
 
-    a "For sure."
+    a "Definitely."
 
     e "Great! Let's head home!"
 
@@ -887,13 +901,16 @@ if epath:
 
     a "Mm-hmm! I'll follow you!"
 
+    hide e happy
+
     "I sure hope nothing interrupts us while we walk towards the exit."
 
     "You hear a quiet voice call your name...Angie..."
 
-    #HERE OVERHAULING DIALOGUE
+    #FIX DIALOGUE HERE
 
     show a deep at center
+
 
     "Ah. Nevermind."
 
@@ -917,6 +934,8 @@ if epath:
 
     e "Shitshitshitshit; quick, Angie, we gotta fight back!"
 
+    #TO HERE
+
     hide a deep
     hide e happy
     jump ending
@@ -932,21 +951,30 @@ else:
 
     e "Heck yeah they sure would have. Thanks for helping me find all the Eggdogs!"
 
-    a "You're welcome~! This was fun. The part where I saw an Eggdog die in front of me aside, it felt like an epic quest!"
+    a "You're welcome~! This was fun. It felt like an epic quest!"
 
-    e "Right? Awesome as heck... remember when that one doggy boi was too scared to go into into her Eggdoggball,"
-    e "so you showed her a shiny thing and she felt better?"
+    e "Right?  We really did a heccin hecc... remember when that one doggy boi was too scared to go into into the Eggdogball,"
+    e "so you showed it that shiny thing and it felt better?"
 
-    a "My wallet? That she took? Oh yeah... well I'm just glad she's feeling better now. Though I'm REALLY not gonna be able to pay for boba later."
+    a "Shiny thing... Oh my wallet?"
+
+    a "Yeah... well I'm just glad she's feeling better now, even if now I’m too broke for boba."
+    e "..."
+    a "..."
+    e "Want me to get it back for you?"
+
     a "Eh... It's alright. There were only like, 2 dollars in there anyways. I think I can get it back later."
-    a "It WAS so much fun though... we should do this again!"
+    e "Alright."
+    a "Man, this was fun... we should do this again!"
     a "Maybe they should just do this for Eggdogcon every year!"
 
-    e "You're right... god that's so big brain."
+    e "Wow you're right... god that's so big brain."
 
-    a "It'll be like Easter! Except... hm... non religious and the eggs are alive!"
+    a "It'll be like Easter! Except... hm... with zombie eggs!"
 
-    e "Hmmmmmm... advanced hide and seek.... my adventure brain likes this idea."
+    e "Hmm technically they’re not zombies, just eggs that are alive."
+
+    e "Buuuuuuut... advanced hide and seek is sparking joy."
 
     a "Ooooh... a d v a n c e d  h i d e  a n d  s e e k .... v e r y  n i c e ,  v e r y  n i c e . . . "
     a "Speaking of...I wonder what happened to the big monster who caused all this in the first place? Hm...Where did it go?"
@@ -954,17 +982,19 @@ else:
 
     e "Hm. I sure hope so."
 
-    a "True. That probably won't be plot relevant later."
+    a "Hopefully that wont come back to bite us in the butt later."
 
-    e "Oh yeah, For sure."
+    e "Definitely."
 
     a "... Cool~! ( ◑‿◑)ɔ┏🍟--🍔┑٩(^◡^ ) Let's head to Fuku!"
 
-    e "Dude, yes! All in all, a pretty on point and fun Eggdogcon!"
+    e "Dude, yes! All in all, this was a pretty on point and fun Eggdogcon!"
 
-    a "Yup! Let's just walk out those doors and leave. I'm really excited to get out of here."
+    a "Yup! Let's get out of here, I'm exhausted."
 
     e "Me too, it's been a long day. I'll follow you!"
+
+    hide a happy
 
     "I sure hope nothing interrupts us while we walk towards the exit."
 
@@ -991,9 +1021,45 @@ label ending:
 
 if epath:
     show angDeepfake movie
-    e "conversation pending"
+
+    A "PUNY HUMANS! GIVE UP AND I MIGHT CONSIDER SPARING YOU (as a consideration of our shared rugged good looks and impeccable fashion sense :0)"
+    a "Uh... first of all, ew you look nothing like me and second of all we’re not going down without a fight!"
+    A "YOU DARE MOCK ME, THE NEXT SUPREME RULER OF THE WORLD??"
+    a "It wasn’t mocking; It was an honest judge of your appearance."
+    e "YEAH WHO WANTS TO LOOK LIKE YOUR FUGLY ASS."
+    a "... (; -_-)"
+    A  "THAT’S IT! PREPARE TO MEET YOUR DOOM"
+    e "I can’t get a good enough angle on it...wait no...you...her...it??"
+    e "Ok Angie, looks like you’re gonna have to battle it on your own"
+    a "Wait how am I supposed to take down a 60 ft deepfake of myself??"
+    e "..."
+    e "...I have no idea..."
+    a "..."
+    e "..."
+    e "Wait I do have an idea! To defeat an eggdog conqueror-warlord, all you have to do is…"
+    a "stream dynamite?"
+    e "...have an eggdog battle!"
+    a "..."
+    e "..."
+    a "yeah battle...that’s what I meant..."
+    e "...ok... well anyways battling seems like the only thing we can do for now so let's just try it."
+
 
     hide angDeepfake
+    #STOP MUSIC HERE, HOW?
+    scene black
+    ""
+    play music dorm
+    show angDeepfakeIdle movie
+    A "bleh omg I’m deded. Take this treasure to remember our time together..."
+    hide angDeepfakeIdle movie
+    "The Angie deepfake fades into dust, leaving behind a small piece of cardstock"
+
+
+    e "hmm it looks like a postcard addressed to…"
+    e "you"
+    "Emily hands over the card to Angie"
+    "As Angie turns the card to the back it reads..."
     # scene bg stever double
     # play music dorm
     #
@@ -1046,9 +1112,45 @@ if epath:
 else:
 
     show emDeepfake movie
-    a "conversation pending"
+    E "PUNY HUMANS! GIVE UP AND I MIGHT CONSIDER SPARING YOU (as a consideration of our shared rugged good looks and impeccable taste in the mems :0)"
+    e "Uh...first of all, ew you look nothing like me and second of all we’re not going down without a fight!"
+    E "YOU DARE MOCK ME, THE NEXT SUPREME RULER OF THE WORLD??"
+    e "Yeah! What are you gonna do about it, fake me? Shrink down and fight me!"
+    a "YEAH! WE AREN’T AFRAID OF YOUR FAKE ASS."
+    e "...Angie...I’m so touched"
+    a "aww you’re welcome anytime ≧◉ᴥ◉≦ "
+    E  "THAT’S IT! PREPARE TO MEET YOUR DOOM"
+    a "I can’t get a good enough angle on it...wait no...you...her...it??"
+    a "Ok Emily, looks like you’re gonna have to battle it on your own"
+    e "Wait how am I supposed to take down a 60 ft deepfake of myself??"
+    a "..."
+    a "...I have no idea..."
+    e"..."
+    a "..."
+    a "Wait I do have an idea! To defeat an eggdog conqueror-warlord, all you have to do is…"
+    e "drincc bepis?"
+    a "...have an eggdog battle!"
+    e "..."
+    a "..."
+    e "yeah battle...that’s what I meant..."
+    a "...ok...well anyways battling seems like the only thing we can do for now so lets just try it."
+
 
     hide emDeepfake movie
+    #stop music here, how???????
+    scene black
+    ""
+    play music dorm
+    show emDeepfakeIdle movie
+    E "bleh omg I’m deded. Take this treasure to remember our time together..."
+    hide emDeepfakeIdle movie
+    "The Emily deepfake fades into dust, leaving behind a small piece of cardstock"
+    a "hmm it looks like a postcard addressed to…"
+    a "you"
+    "Angie hands over the card to Emily"
+    "As Emily turns the card to the back it reads..."
+
+
 
     # scene black
     # scene bg fuku

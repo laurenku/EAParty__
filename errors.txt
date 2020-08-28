@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 473: expected statement.
-    renpy.movie_cutscene("Transition1.webm", delay=None, loops=0, stop_music=False)
-                                                                                   ^
-
-File "game/script.rpy", line 474: expected statement.
-    renpy.movie_cutscene("Transition2again.webm", delay=None, loops=0, stop_music=False)
-                                                                                        ^
+File "game/script.rpy", line 369: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    "Is this just fantasy?"
+    ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Thu Aug 27 11:34:37 2020
+Fri Aug 28 00:17:41 2020
