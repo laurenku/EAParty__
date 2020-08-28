@@ -903,7 +903,7 @@ else:
 
     show emDeepfake movie
 
-    a "conversation pending"
+    a "conversation pending..."
 
 
     scene black
