@@ -694,7 +694,7 @@ label con:
 
         e "What's that?"
 
-        "Emily picks up BEGG'S EGGDOGDEX from the ground."
+        "You pick up BEGG'S EGGDOGDEX from the ground."
 
         show a thinking
 
