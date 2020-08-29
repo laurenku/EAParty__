@@ -907,22 +907,22 @@ label Joyce1:
                     hide attack2
                     jump Joyce2
 label Joyce2:
-        show attack2
+        show attack3
         "Critical hit!"
         "Joyce Eggdog used C0."
         #hide 30 health bar
         #show 20 health bar
         menu JoyceAttackOptions3:
             "GOOD TYPOGRAPHY":
-                    hide attack2
+                    hide attack3
                     jump Joyce3
 
             "A SAD MARSHMALLOW":
-                    hide attack2
+                    hide attack3
                     jump Joyce3
 
             "CAT VIDEOS":
-                    hide attack2
+                    hide attack3
                     jump Joyce3
 label Joyce3:
         "You caught the Joyce Eggdog!"
@@ -1025,22 +1025,22 @@ label Mikey1:
                 hide attack2
                 jump Mikey2
 label Mikey2:
-    show attack2
+    show attack3
     "Critical hit!"
     "Mikey Eggdog used WII GOLF THEME."
     #hide 30 health bar
     #show 20 health bar
     menu MikeyAttackOptions3:
         "WAP":
-                hide attack2
+                hide attack3
                 jump Mikey3
 
         "JAZZ HANDS":
-                hide attack2
+                hide attack3
                 jump Mikey3
 
         "CRYING ON COMMAND":
-                hide attack2
+                hide attack3
                 jump Mikey3
 
 label Mikey3:
