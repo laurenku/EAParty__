@@ -1133,15 +1133,15 @@ label Rowen0:
         menu RowenAttackOptions:
             "SARANGHAE <3":
                     hide attack1
-                    jump Rowen0
+                    jump Rowen1
 
             "BOBA BRIBE":
                     hide attack1
-                    jump Rowen0
+                    jump Rowen1
 
             "A VERY NICE COMPLIMENT":
                     hide attack1
-                    jump Rowen0
+                    jump Rowen1
 label Rowen1:
     show attack2
     show aDogProps
