@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1: expected statement.
-    window hide﻿
-          ^
+The label RowenAttackOptions2 is defined twice, at
+  File "game/script.rpy", line 1133 and
+  File "game/script.rpy", line 1151.
+
+The label MatthewAttackOptions2 is defined twice, at
+  File "game/script.rpy", line 1192 and
+  File "game/script.rpy", line 1211.
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Fri Aug 28 15:05:45 2020
+Fri Aug 28 21:11:12 2020
