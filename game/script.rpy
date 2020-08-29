@@ -1071,15 +1071,15 @@ label Sarah0:
     menu SarahAttackOptions:
         "SARANGHAE <3":
                 hide attack1
-                jump Sarah0
+                jump Sarah1
 
         "BOBA BRIBE":
                 hide attack1
-                jump Sarah0
+                jump Sarah1
 
         "A VERY NICE COMPLIMENT":
                 hide attack1
-                jump Sarah0
+                jump Sarah1
 label Sarah1:
     show attack2
     show aDogProps
