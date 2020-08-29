@@ -869,6 +869,403 @@ label battle0Health:
         #hide Torchy Eggdog
         #hide 10 health bar
         "You caught the Torchy's Eggdog!"
+    jump RandomPick
+
+label Joyce0:
+    scene aPokemonBG
+        "A wild Kpop Eggdog appears!"
+        show attack1
+        show aDogProps
+        #show angie's eggdog
+        #show 30 health bar
+        menu JoyceAttackOptions:
+            "SARANGHAE <3":
+                    hide attack1
+                    jump Joyce1
+
+            "BOBA BRIBE":
+                    hide attack1
+                    jump Joyce1
+
+            "A VERY NICE COMPLIMENT":
+                    hide attack1
+                    jump Joyce1
+label Joyce1:
+        show attack2
+        show aDogProps
+        "Critical hit!"
+        "Kpop Eggdog used YA GOT NO JAMS."
+        #hide 30 health bar
+        #show 20 health bar
+        menu JoyceAttackOptions2:
+            "SARANGHAE <3":
+                    hide attack2
+                    jump Joyce2
+
+            "BOBA BRIBE":
+                    hide attack2
+                    jump Joyce2
+
+            "A VERY NICE COMPLIMENT":
+                    hide attack2
+                    jump Joyce2
+label Joyce2:
+        show attack2
+        show aDogProps
+        "Critical hit!"
+        "Kpop Eggdog used YA GOT NO JAMS."
+        #hide 30 health bar
+        #show 20 health bar
+        menu JoyceAttackOptions3:
+            "SARANGHAE <3":
+                    hide attack2
+                    jump Joyce3
+
+            "BOBA BRIBE":
+                    hide attack2
+                    jump Joyce3
+
+            "A VERY NICE COMPLIMENT":
+                    hide attack2
+                    jump Joyce3
+label Joyce3:
+    if epath:
+        "You caught the Joyce Eggdog!"
+    else:
+        "You caught the Joyce Eggdog!"
+
+label Lauren0:
+    "A wild Kpop Eggdog appears!"
+    show attack1
+    show aDogProps
+    #show angie's eggdog
+    #show 30 health bar
+    menu LaurenAttackOptions:
+        "SARANGHAE <3":
+                hide attack1
+                jump Lauren1
+
+        "BOBA BRIBE":
+                hide attack1
+                jump Lauren1
+
+        "A VERY NICE COMPLIMENT":
+                hide attack1
+                jump Lauren1
+
+label Lauren1:
+    show attack2
+    show aDogProps
+    "Critical hit!"
+    "Kpop Eggdog used YA GOT NO JAMS."
+    #hide 30 health bar
+    #show 20 health bar
+    menu LaurenAttackOptions2:
+        "SARANGHAE <3":
+                hide attack2
+                jump Lauren2
+
+        "BOBA BRIBE":
+                hide attack2
+                jump Lauren2
+
+        "A VERY NICE COMPLIMENT":
+                hide attack2
+                jump Lauren2
+
+label Lauren2:
+    show attack2
+    show aDogProps
+    "Critical hit!"
+    "Kpop Eggdog used YA GOT NO JAMS."
+    #hide 30 health bar
+    #show 20 health bar
+    menu LaurenAttackOptions3:
+        "SARANGHAE <3":
+                hide attack2
+                jump Lauren3
+
+        "BOBA BRIBE":
+                hide attack2
+                jump Lauren3
+
+        "A VERY NICE COMPLIMENT":
+                hide attack2
+                jump Lauren3
+
+label Lauren3:
+    if epath:
+        "You caught the Lauren Eggdog!"
+    else:
+        "You caught the Lauren Eggdog!"
+
+label Mikey0:
+    "A wild Kpop Eggdog appears!"
+    show attack1
+    show aDogProps
+    #show angie's eggdog
+    #show 30 health bar
+    menu MikeyAttackOptions:
+        "SARANGHAE <3":
+                hide attack1
+                jump Mikey1
+
+        "BOBA BRIBE":
+                hide attack1
+                jump Mikey1
+
+        "A VERY NICE COMPLIMENT":
+                hide attack1
+                jump Mikey1
+label Mikey1:
+    show attack2
+    show aDogProps
+    "Critical hit!"
+    "Kpop Eggdog used YA GOT NO JAMS."
+    #hide 30 health bar
+    #show 20 health bar
+    menu MikeyAttackOptions2:
+        "SARANGHAE <3":
+                hide attack2
+                jump Mikey2
+
+        "BOBA BRIBE":
+                hide attack2
+                jump Mikey2
+
+        "A VERY NICE COMPLIMENT":
+                hide attack2
+                jump Mikey2
+label Mikey2:
+    show attack2
+    show aDogProps
+    "Critical hit!"
+    "Kpop Eggdog used YA GOT NO JAMS."
+    #hide 30 health bar
+    #show 20 health bar
+    menu MikeyAttackOptions3:
+        "SARANGHAE <3":
+                hide attack2
+                jump Mikey3
+
+        "BOBA BRIBE":
+                hide attack2
+                jump Mikey3
+
+        "A VERY NICE COMPLIMENT":
+                hide attack2
+                jump Mikey3
+
+label Mikey3:
+    if epath:
+        "You caught the Mikey Eggdog!"
+    else:
+        "You caught the Mikey Eggdog!"
+
+label Sarah0:
+    "A wild Kpop Eggdog appears!"
+    show attack1
+    show aDogProps
+    #show angie's eggdog
+    #show 30 health bar
+    menu SarahAttackOptions:
+        "SARANGHAE <3":
+                hide attack1
+                jump Sarah0
+
+        "BOBA BRIBE":
+                hide attack1
+                jump Sarah0
+
+        "A VERY NICE COMPLIMENT":
+                hide attack1
+                jump Sarah0
+label Sarah1:
+    show attack2
+    show aDogProps
+    "Critical hit!"
+    "Kpop Eggdog used YA GOT NO JAMS."
+    #hide 30 health bar
+    #show 20 health bar
+    menu SarahAttackOptions2:
+        "SARANGHAE <3":
+                hide attack2
+                jump Sarah2
+
+        "BOBA BRIBE":
+                hide attack2
+                jump Sarah2
+
+        "A VERY NICE COMPLIMENT":
+                hide attack2
+                jump Sarah2
+label Sarah2:
+    show attack2
+    show aDogProps
+    "Critical hit!"
+    "Kpop Eggdog used YA GOT NO JAMS."
+    #hide 30 health bar
+    #show 20 health bar
+    menu SarahAttackOptions3:
+        "SARANGHAE <3":
+                hide attack2
+                jump Sarah3
+        "BOBA BRIBE":
+                hide attack2
+                jump Sarah3
+        "A VERY NICE COMPLIMENT":
+                hide attack2
+                jump Sarah3
+label Sarah3:
+    if epath:
+        "You caught the Sarah Eggdog!"
+    else:
+        "You caught the Sarah Eggdog!"
+
+
+label Rowen0:
+    scene aPokemonBG
+        "A wild Kpop Eggdog appears!"
+        show attack1
+        show aDogProps
+        #show angie's eggdog
+        #show 30 health bar
+        menu RowenAttackOptions:
+            "SARANGHAE <3":
+                    hide attack1
+                    jump Rowen0
+
+            "BOBA BRIBE":
+                    hide attack1
+                    jump Rowen0
+
+            "A VERY NICE COMPLIMENT":
+                    hide attack1
+                    jump Rowen0
+label Rowen1:
+    show attack2
+    show aDogProps
+    "Critical hit!"
+    "Kpop Eggdog used YA GOT NO JAMS."
+    #hide 30 health bar
+    #show 20 health bar
+    menu RowenAttackOptions2:
+        "SARANGHAE <3":
+                hide attack2
+                jump Rowen2
+
+        "BOBA BRIBE":
+                hide attack2
+                jump Rowen2
+
+        "A VERY NICE COMPLIMENT":
+                hide attack2
+                jump Rowen2
+label Rowen2:
+    show attack2
+    show aDogProps
+    "Critical hit!"
+    "Kpop Eggdog used YA GOT NO JAMS."
+    #hide 30 health bar
+    #show 20 health bar
+    menu RowenAttackOptions2:
+        "SARANGHAE <3":
+                hide attack2
+                jump Rowen3
+
+        "BOBA BRIBE":
+                hide attack2
+                jump Rowen3
+
+        "A VERY NICE COMPLIMENT":
+                hide attack2
+                jump Rowen3
+label Rowen3:
+    if epath:
+        "You caught the Rowen Eggdog!"
+    else:
+        "You caught the Rowen Eggdog!"
+
+label Matthew0:
+    scene aPokemonBG
+        "A wild Kpop Eggdog appears!"
+        show attack1
+        show aDogProps
+        #show angie's eggdog
+        #show 30 health bar
+        menu MatthewAttackOptions:
+            "SARANGHAE <3":
+                    hide attack1
+                    jump Matthew1
+
+            "BOBA BRIBE":
+                    hide attack1
+                    jump Matthew1
+
+            "A VERY NICE COMPLIMENT":
+                    hide attack1
+                    jump Matthew1
+label Matthew1:
+    show attack2
+    show aDogProps
+    "Critical hit!"
+    "Kpop Eggdog used YA GOT NO JAMS."
+    #hide 30 health bar
+    #show 20 health bar
+    menu MatthewAttackOptions2:
+        "SARANGHAE <3":
+                hide attack2
+                jump Matthew2
+
+        "BOBA BRIBE":
+                hide attack2
+                jump Matthew2
+
+        "A VERY NICE COMPLIMENT":
+                hide attack2
+                jump Matthew2
+
+label Matthew2:
+    show attack2
+    show aDogProps
+    "Critical hit!"
+    "Kpop Eggdog used YA GOT NO JAMS."
+    #hide 30 health bar
+    #show 20 health bar
+    menu MatthewAttackOptions2:
+        "SARANGHAE <3":
+                hide attack2
+                jump Matthew3
+
+        "BOBA BRIBE":
+                hide attack2
+                jump Matthew3
+
+        "A VERY NICE COMPLIMENT":
+                hide attack2
+                jump Matthew3
+
+label Matthew3:
+    if epath:
+        "You caught the Matthew Eggdog!"
+    else:
+        "You caught the Matthew Eggdog!"
+
+label RandomPick:
+    $ d20roll = renpy.random.randint(1, 6)
+    if d20roll = 1
+        jump Joyce0
+    if d20roll = 2
+        jump Lauren0
+    if d20roll = 3
+        jump Mikey0
+    if d20roll = 4
+        jump Sarah0
+    if d20roll = 5
+        jump Rowen0
+    if d20roll = 6
+        jump Matthew0
+
 
 
 #pokemon battle scene ends
