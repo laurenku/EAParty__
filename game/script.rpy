@@ -878,36 +878,44 @@ label Joyce0:
         menu JoyceAttackOptions:
             "GOOD TYPOGRAPHY":
                     hide attack1
+                    show attack2
+                    "You did some damage."
                     jump Joyce1
 
             "A SAD MARSHMALLOW":
                     hide attack1
+                    show attack2
+                    "You did some damage."
                     jump Joyce1
 
             "CAT VIDEOS":
                     hide attack1
+                    show attack2
+                    "You did some damage."
                     jump Joyce1
 label Joyce1:
-        show attack2
-        "Critical hit!"
         "Joyce Eggdog used SUBSTANCE PAINTER."
         #hide 30 health bar
         #show 20 health bar
         menu JoyceAttackOptions2:
             "GOOD TYPOGRAPHY":
                     hide attack2
+                    show attack3
+                    "Critical hit!"
                     jump Joyce2
 
             "A SAD MARSHMALLOW":
                     hide attack2
+                    show attack3
+                    "Critical hit!"
                     jump Joyce2
 
             "CAT VIDEOS":
                     hide attack2
+                    show attack3
+                    "Critical hit!"
                     jump Joyce2
 label Joyce2:
-        show attack3
-        "Critical hit!"
         "Joyce Eggdog used C0."
         #hide 30 health bar
         #show 20 health bar
@@ -925,6 +933,7 @@ label Joyce2:
                     jump Joyce3
 label Joyce3:
         "You caught the Joyce Eggdog!"
+        jump con2
 
 label Lauren0:
     "A wild Lauren Eggdog appears!"
@@ -934,59 +943,65 @@ label Lauren0:
     menu LaurenAttackOptions:
         "DENTAL HYGIENE":
                 hide attack1
+                show attack2
+                "You did some damage."
                 jump Lauren1
 
         "A BIG SCARF":
                 hide attack1
+                show attack2
+                "You did some damage."
                 jump Lauren1
 
         "WIZARD101":
                 hide attack1
+                show attack2
+                "You did some damage."
                 jump Lauren1
 
 label Lauren1:
-    show attack2
-    "Critical hit!"
     "Lauren Eggdog used AN OLD ABP BANANA."
     #hide 30 health bar
     #show 20 health bar
     menu LaurenAttackOptions2:
         "DENTAL HYGIENE":
                 hide attack2
+                show attack3
+                "Critical hit!"
                 jump Lauren2
 
         "A BIG SCARF":
                 hide attack2
+                show attack3
+                "Critical hit!"
                 jump Lauren2
 
         "WIZARD101":
                 hide attack2
+                show attack3
+                "Critical hit!"
                 jump Lauren2
 
 label Lauren2:
-    show attack2
-    "Critical hit!"
     "Lauren Eggdog used WATERED DOWN STRAWBERRY LEMONADE."
     #hide 30 health bar
     #show 20 health bar
     menu LaurenAttackOptions3:
         "DENTAL HYGIENE":
-                hide attack2
+                hide attack3
                 jump Lauren3
 
         "A BIG SCARF":
-                hide attack2
+                hide attack3
                 jump Lauren3
 
         "WIZARD101":
-                hide attack2
+                hide attack3
                 jump Lauren3
 
 label Lauren3:
-    if epath:
         "You caught the Lauren Eggdog!"
-    else:
-        "You caught the Lauren Eggdog!"
+        jump con2
 
 label Mikey0:
     "A wild Mikey Eggdog appears!"
@@ -996,36 +1011,44 @@ label Mikey0:
     menu MikeyAttackOptions:
         "WAP":
                 hide attack1
+                show attack2
+                "You did some damage."
                 jump Mikey1
 
         "JAZZ HANDS":
                 hide attack1
+                show attack2
+                "You did some damage."
                 jump Mikey1
 
         "CRYING ON COMMAND":
                 hide attack1
+                show attack2
+                "You used crying on command. Mikey was moved."
                 jump Mikey1
 label Mikey1:
-    show attack2
-    "Critical hit!"
     "Mikey Eggdog used POWER NAP."
     #hide 30 health bar
     #show 20 health bar
     menu MikeyAttackOptions2:
         "WAP":
                 hide attack2
+                show attack3
+                "Critical hit!"
                 jump Mikey2
 
         "JAZZ HANDS":
                 hide attack2
+                show attack3
+                "Critical hit!"
                 jump Mikey2
 
         "CRYING ON COMMAND":
                 hide attack2
+                show attack3
+                "You used crying on command. Mikey was moved."
                 jump Mikey2
 label Mikey2:
-    show attack3
-    "Critical hit!"
     "Mikey Eggdog used WII GOLF THEME."
     #hide 30 health bar
     #show 20 health bar
@@ -1043,10 +1066,8 @@ label Mikey2:
                 jump Mikey3
 
 label Mikey3:
-    if epath:
         "You caught the Mikey Eggdog!"
-    else:
-        "You caught the Mikey Eggdog!"
+        jump con2
 
 label Sarah0:
     "A wild Sarah Eggdog appears!"
@@ -1056,54 +1077,60 @@ label Sarah0:
     menu SarahAttackOptions:
         "FIREBENDING":
                 hide attack1
+                show attack2
+                "You did some damage."
                 jump Sarah1
 
         "BAKED POTATO SOUP":
                 hide attack1
+                show attack2
+                "You did some damage."
                 jump Sarah1
 
         "ULTIMATE GOOSE GAME":
                 hide attack1
+                show attack2
+                "You did some damage."
                 jump Sarah1
 label Sarah1:
-    show attack2
-    "Critical hit!"
     "Sarah Eggdog used BIG BRAIN."
     #hide 30 health bar
     #show 20 health bar
     menu SarahAttackOptions2:
         "FIREBENDING":
                 hide attack2
+                show attack3
+                "Critical hit!"
                 jump Sarah2
 
         "BAKED POTATO SOUP":
                 hide attack2
+                show attack3
+                "Critical hit!"
                 jump Sarah2
 
         "ULTIMATE GOOSE GAME":
                 hide attack2
+                show attack3
+                "Critical hit!"
                 jump Sarah2
 label Sarah2:
-    show attack2
-    "Critical hit!"
     "Sarah Eggdog used SOUNDS OF CHINA."
     #hide 30 health bar
     #show 20 health bar
     menu SarahAttackOptions3:
         "FIREBENDING":
-                hide attack2
+                hide attack3
                 jump Sarah3
         "BAKED POTATO SOUP":
-                hide attack2
+                hide attack3
                 jump Sarah3
         "ULTIMATE GOOSE GAME":
-                hide attack2
+                hide attack3
                 jump Sarah3
 label Sarah3:
-    if epath:
         "You caught the Sarah Eggdog!"
-    else:
-        "You caught the Sarah Eggdog!"
+        jump con2
 
 
 label Rowen0:
@@ -1114,56 +1141,62 @@ label Rowen0:
         menu RowenAttackOptions:
             "GARRETT ERVIN":
                     hide attack1
+                    show attack2
+                    "You did some damage."
                     jump Rowen1
 
             "EMILY":
                     hide attack1
+                    show attack2
+                    "You did some damage."
                     jump Rowen1
 
             "MARK ZUCKERBERG":
                     hide attack1
+                    show attack2
+                    "You did some damage."
                     jump Rowen1
 label Rowen1:
-    show attack2
-    "Critical hit!"
     "Rowan Eggdog used ZUCKERBEAM."
     #hide 30 health bar
     #show 20 health bar
     menu RowenAttackOptions2:
         "GARRETT ERVIN":
                 hide attack2
+                show attack3
+                "Critical hit!"
                 jump Rowen2
 
         "EMILY":
                 hide attack2
+                show attack3
+                "Critical hit!"
                 jump Rowen2
 
         "MARK ZUCKERBERG":
                 hide attack2
+                show attack3
+                "Critical hit!"
                 jump Rowen2
 label Rowen2:
-    show attack2
-    "Critical hit!"
     "Rowan Eggdog used GALLO BURRITO CHOMP."
     #hide 30 health bar
     #show 20 health bar
     menu RowenAttackOptions3:
         "GARRETT ERVIN":
-                hide attack2
+                hide attack3
                 jump Rowen3
 
         "EMILY":
-                hide attack2
+                hide attack3
                 jump Rowen3
 
         "MARK ZUCKERBERG":
-                hide attack2
+                hide attack3
                 jump Rowen3
 label Rowen3:
-    if epath:
         "You caught the Rowen Eggdog!"
-    else:
-        "You caught the Rowen Eggdog!"
+        jump con2
 
 label Matthew0:
         "A wild Matthew Eggdog appears!"
@@ -1173,275 +1206,282 @@ label Matthew0:
         menu MatthewAttackOptions:
             "CRITICAL THEORY ESSAYS":
                     hide attack1
+                    show attack2
+                    "It wasn't very effective."
                     jump Matthew1
 
             "SIDNEY CHURCH":
                     hide attack1
+                    show attack2
+                    "You did some damage."
                     jump Matthew1
 
             "VR HEADSETS":
                     hide attack1
+                    show attack2
+                    "You did some damage."
                     jump Matthew1
 label Matthew1:
-    show attack2
-    "Critical hit!"
     "Matthew Eggdog used FINGER GUNS."
     #hide 30 health bar
     #show 20 health bar
     menu MatthewAttackOptions2:
         "CRITICAL THEORY ESSAYS":
                 hide attack2
+                show attack3
+                "It wasn't very effective."
                 jump Matthew2
 
         "SIDNEY CHURCH":
                 hide attack2
+                show attack3
+                "Critical hit!"
                 jump Matthew2
 
         "VR HEADSETS":
                 hide attack2
+                show attack3
+                "Critical hit!"
                 jump Matthew2
 
 label Matthew2:
-    show attack2
-    "Critical hit!"
     "Matthew Eggdog used CAPITALISM."
     #hide 30 health bar
     #show 20 health bar
     menu MatthewAttackOptions3:
         "CRITICAL THEORY ESSAYS":
-                hide attack2
+                hide attack3
                 jump Matthew3
 
         "SIDNEY CHURCH":
-                hide attack2
+                hide attack3
                 jump Matthew3
 
         "VR HEADSETS":
-                hide attack2
+                hide attack3
                 jump Matthew3
 
 label Matthew3:
-    if epath:
         "You caught the Matthew Eggdog!"
-    else:
-        "You caught the Matthew Eggdog!"
+        jump con2
 
 
 #pokemon battle scene ends
 
-if epath:
+label con2:
+    if epath:
 
-    scene bg convention
-    play music dorm fadeout 1.0 fadein 1.0
+        scene bg convention
+        play music dorm fadeout 1.0 fadein 1.0
 
-    show e happy at left
-    e "We got all the eggdogs!"
-    e "If only Begg was awake to see all of this they would've been proud."
+        show e happy at left
+        e "We got all the eggdogs!"
+        e "If only Begg was awake to see all of this they would've been proud."
 
-    a "Yeah... they sure would have. Thank you for helping me do this."
+        a "Yeah... they sure would have. Thank you for helping me do this."
 
-    e "No problem! This was actually kinda fun. Like an epic quest!"
+        e "No problem! This was actually kinda fun. Like an epic quest!"
 
-    a "It was pretty thrilling... especially the part where that one doggy boi refused to go into the Eggdogball..."
+        a "It was pretty thrilling... especially the part where that one doggy boi refused to go into the Eggdogball..."
 
-    e "And we both had to sit on it so the Eggdogball wouldn't reopen! Man, that was so fun."
+        e "And we both had to sit on it so the Eggdogball wouldn't reopen! Man, that was so fun."
 
-    a "Maybe they should just do this for Eggdogcon every year!"
-    "...And the Universe unanimously agreed that that was a big brain strat..."
+        a "Maybe they should just do this for Eggdogcon every year!"
+        "...And the Universe unanimously agreed that that was a big brain strat..."
 
-    e "I absolutely agree. It'll be like Easter except non religious and with talking eggs..."
-    e "A zombie Easter...but with dogs!"
-    e "Hmmmmmm... advanced hide and seek.... me likey."
-    e "That aside, I wonder what happened to the big monster who caused all this in the first place? Where did it go?"
+        e "I absolutely agree. It'll be like Easter except non religious and with talking eggs..."
+        e "A zombie Easter...but with dogs!"
+        e "Hmmmmmm... advanced hide and seek.... me likey."
+        e "That aside, I wonder what happened to the big monster who caused all this in the first place? Where did it go?"
 
-    a "Maybe... it just left?"
+        a "Maybe... it just left?"
 
-    e "Hm. I sure hope so. There no way this could come back to bite us in the ass later right?"
+        e "Hm. I sure hope so. There no way this could come back to bite us in the ass later right?"
 
-    a "Definitely."
+        a "Definitely."
 
-    e "Great! Let's head home!"
+        e "Great! Let's head home!"
 
-    a "Yeah, I'm beat. All in all, a pretty on point and fun Eggdogcon!"
+        a "Yeah, I'm beat. All in all, a pretty on point and fun Eggdogcon!"
 
-    e "Yup! Let's just walk out those doors and leave. Easy as pie."
+        e "Yup! Let's just walk out those doors and leave. Easy as pie."
 
-    a "Mm-hmm! I'll follow you!"
+        a "Mm-hmm! I'll follow you!"
 
-    hide e happy
+        hide e happy
 
-    play music danger fadeout 8.0 fadein 10.0
+        play music danger fadeout 8.0 fadein 10.0
 
-    "You hear a quiet voice call your name...Angie..."
+        "You hear a quiet voice call your name...Angie..."
 
-    "Angie..."
-    a "What is that voice??"
-    e "Who are you?"
-    "MUAHAHAHA YOU'RE TOO LATE. I'VE ALREADY HARVESTED THE ESSENCE FROM ALL THOSE SOFT EGGDOGS."
+        "Angie..."
+        a "What is that voice??"
+        e "Who are you?"
+        "MUAHAHAHA YOU'RE TOO LATE. I'VE ALREADY HARVESTED THE ESSENCE FROM ALL THOSE SOFT EGGDOGS."
 
-    a "No... you're wrong! We found all the eggdogs and we released them from your spell!"
+        a "No... you're wrong! We found all the eggdogs and we released them from your spell!"
 
-    "HAHAHAHA THAT WAS ALL A DIVERSION. YOU NEVER KNEW WHAT THE PURPOSE OF THIS ENTIRE CONVENTION WAS DIDN'T YOU?"
+        "HAHAHAHA THAT WAS ALL A DIVERSION. YOU NEVER KNEW WHAT THE PURPOSE OF THIS ENTIRE CONVENTION WAS DIDN'T YOU?"
 
-    e "What??? Isn't it just a place for eggdog enthusiasts to get free stickers and merch???"
+        e "What??? Isn't it just a place for eggdog enthusiasts to get free stickers and merch???"
 
-    "WELL, YES, BUT I BET YOU DIDN'T EVEN READ THE BROCHURE FOR THE VENUE."
+        "WELL, YES, BUT I BET YOU DIDN'T EVEN READ THE BROCHURE FOR THE VENUE."
 
-    e "You got us there."
+        e "You got us there."
 
-    "THE CONVENTION WAS ALSO WHERE EGGDOG TECH WAS GOING TO REVEAL THEIR NEWEST EGGDOGINATOR THAT CAN TURN EGGS INTO EGGDOGS."
+        "THE CONVENTION WAS ALSO WHERE EGGDOG TECH WAS GOING TO REVEAL THEIR NEWEST EGGDOGINATOR THAT CAN TURN EGGS INTO EGGDOGS."
 
-    e "What???? How did we not hear about this."
-    a "Is this what happened when we were late??"
+        e "What???? How did we not hear about this."
+        a "Is this what happened when we were late??"
 
-    "YOU SEE, THE EGGDOGINATOR RUNS OF EGGDOGINITE, A POWERFUL GEMSTONE WORSHIPPED BY MAN AND EGGDOG ALIKE. BUT INSTEAD OF TURNING EGGS INTO USELESS EGGDOGS I'VE HARNESSED THE EGGDOGINITE TO ITS FULL POTENTIAL..."
-    "AND I'M GOING TO USE ITS POWER TO WIPE THIS SAD CONVENTION AND ALL THE EGGDOGS OFF THE FACE OF THE PLANET. PUNY HUMANS! YOU'RE ABOUT TO WITNESS HISTORY."
+        "YOU SEE, THE EGGDOGINATOR RUNS OF EGGDOGINITE, A POWERFUL GEMSTONE WORSHIPPED BY MAN AND EGGDOG ALIKE. BUT INSTEAD OF TURNING EGGS INTO USELESS EGGDOGS I'VE HARNESSED THE EGGDOGINITE TO ITS FULL POTENTIAL..."
+        "AND I'M GOING TO USE ITS POWER TO WIPE THIS SAD CONVENTION AND ALL THE EGGDOGS OFF THE FACE OF THE PLANET. PUNY HUMANS! YOU'RE ABOUT TO WITNESS HISTORY."
 
-    a "Why are you doing this???"
+        a "Why are you doing this???"
 
-    "WHY AM I DOING THIS?? YOU'RE REALLY ASKING ME THAT RIGHT NOW??? HAHA... BWAHAHAHAHA...!!! BECAUSE I CAN!!"
+        "WHY AM I DOING THIS?? YOU'RE REALLY ASKING ME THAT RIGHT NOW??? HAHA... BWAHAHAHAHA...!!! BECAUSE I CAN!!"
 
-    a "Show your face you coward!"
+        a "Show your face you coward!"
 
-    show a deep at center
+        show a deep at center
 
-    a "..."
-    a "Omg Begg was right - it is hideous."
+        a "..."
+        a "Omg Begg was right - it is hideous."
 
-    a "You can kidnap the eggdogs, you can even take the eggdoginite, but I'm not going to let you destroy this planet."
+        a "You can kidnap the eggdogs, you can even take the eggdoginite, but I'm not going to let you destroy this planet."
 
-    e "Angie.... that face looks familiar."
+        e "Angie.... that face looks familiar."
 
-    a "Be quiet I'm in the middle of my rant."
-    a "And I'm gonna stop you, you hideous beast!!!"
+        a "Be quiet I'm in the middle of my rant."
+        a "And I'm gonna stop you, you hideous beast!!!"
 
-    "SILENCE... HAHAHAHAHAHAHA you fool... I AM YOU."
+        "SILENCE... HAHAHAHAHAHAHA you fool... I AM YOU."
 
-    a ":0"
-    e ":0"
+        a ":0"
+        e ":0"
 
-    A "PREPARE TO DIE."
+        A "PREPARE TO DIE."
 
 
-    hide a deep
-    hide e happy
-    jump ending
+        hide a deep
+        hide e happy
+        jump ending
 
-else:
+    else:
 
-    scene bg convention
-    play music dorm fadeout 1.0 fadein 1.0
+        scene bg convention
+        play music dorm fadeout 1.0 fadein 1.0
 
-    show a happy at left
-    a "We got all the eggdogs :D"
-    a "I can't for when Begg wakes up! Begg's going to be so stoked that their Eggdogdex is complete!"
+        show a happy at left
+        a "We got all the eggdogs :D"
+        a "I can't for when Begg wakes up! Begg's going to be so stoked that their Eggdogdex is complete!"
 
-    e "Heck yeah they sure would have. Thanks for helping me find all the Eggdogs!"
+        e "Heck yeah they sure would have. Thanks for helping me find all the Eggdogs!"
 
-    a "You're welcome! This was fun. It felt like an epic quest!"
+        a "You're welcome! This was fun. It felt like an epic quest!"
 
-    e "Right?  We really did a heccin hecc... remember when that one doggy boi was too scared to go into the Eggdogball,"
-    e "So you showed it that shiny thing and it felt better?"
+        e "Right?  We really did a heccin hecc... remember when that one doggy boi was too scared to go into the Eggdogball,"
+        e "So you showed it that shiny thing and it felt better?"
 
-    a "Shiny thing... Oh my wallet?"
+        a "Shiny thing... Oh my wallet?"
 
-    a "Yeah... well I'm just glad she's feeling better now, even if now I’m too broke for boba."
-    e "..."
-    a "..."
-    e "Want me to get it back for you?"
+        a "Yeah... well I'm just glad she's feeling better now, even if now I’m too broke for boba."
+        e "..."
+        a "..."
+        e "Want me to get it back for you?"
 
-    a "Eh... It's alright. There were only like, 2 dollars in there anyways. I think I can get it back later."
-    e "Alright."
-    a "Man, this was fun... we should do this again!"
-    a "Maybe they should just do this for Eggdogcon every year!"
+        a "Eh... It's alright. There were only like, 2 dollars in there anyways. I think I can get it back later."
+        e "Alright."
+        a "Man, this was fun... we should do this again!"
+        a "Maybe they should just do this for Eggdogcon every year!"
 
-    e "Wow you're right... god that's so big brain."
+        e "Wow you're right... god that's so big brain."
 
-    a "It'll be like Easter! Except... hm... with zombie eggs!"
+        a "It'll be like Easter! Except... hm... with zombie eggs!"
 
-    e "Hmm technically they’re not zombies, just eggs that are alive."
+        e "Hmm technically they’re not zombies, just eggs that are alive."
 
-    e "Buuuuuuut... advanced hide and seek is sparking joy."
+        e "Buuuuuuut... advanced hide and seek is sparking joy."
 
-    a "Ooooh... a d v a n c e d  h i d e  a n d  s e e k .... v e r y  n i c e ,  v e r y  n i c e . . . "
-    a "Speaking of...I wonder what happened to the big monster who caused all this in the first place? Hm...Where did it go?"
-    a "Maybe... it just left?"
+        a "Ooooh... a d v a n c e d  h i d e  a n d  s e e k .... v e r y  n i c e ,  v e r y  n i c e . . . "
+        a "Speaking of...I wonder what happened to the big monster who caused all this in the first place? Hm...Where did it go?"
+        a "Maybe... it just left?"
 
-    e "Hm. I sure hope so."
+        e "Hm. I sure hope so."
 
-    a "Hopefully that won't come back to bite us in the butt later."
+        a "Hopefully that won't come back to bite us in the butt later."
 
-    e "Definitely."
+        e "Definitely."
 
-    a "... Cool~! ( ◑‿◑)ɔ┏🍟--🍔┑٩(^◡^ ) Let's head to Fuku!"
+        a "... Cool~! ( ◑‿◑)ɔ┏🍟--🍔┑٩(^◡^ ) Let's head to Fuku!"
 
-    e "Dude, yes! All in all, this was a pretty on point and fun Eggdogcon!"
+        e "Dude, yes! All in all, this was a pretty on point and fun Eggdogcon!"
 
-    a "Yup! Let's get out of here, I'm exhausted."
+        a "Yup! Let's get out of here, I'm exhausted."
 
-    e "Me too, it's been a long day. I'll follow you!"
+        e "Me too, it's been a long day. I'll follow you!"
 
-    hide a happy
+        hide a happy
 
-    #NEW
+        #NEW
 
-    play music danger fadeout 8.0 fadein 10.0
+        play music danger fadeout 8.0 fadein 10.0
 
 
-    "You hear a quiet voice call your name... Emily..."
+        "You hear a quiet voice call your name... Emily..."
 
-    "Emily..."
-    e "What is that voice??"
-    a "Who are you?"
-    "MUAHAHAHA YOU'RE TOO LATE. I'VE ALREADY HARVESTED THE ESSENCE FROM ALL THOSE SOFT EGGDOGS."
+        "Emily..."
+        e "What is that voice??"
+        a "Who are you?"
+        "MUAHAHAHA YOU'RE TOO LATE. I'VE ALREADY HARVESTED THE ESSENCE FROM ALL THOSE SOFT EGGDOGS."
 
-    e "No... you're wrong! We found all the eggdogs and we released them from your spell!"
+        e "No... you're wrong! We found all the eggdogs and we released them from your spell!"
 
-    "HAHAHAHA THAT WAS ALL A DIVERSION. YOU NEVER KNEW WHAT THE PURPOSE OF THIS ENTIRE CONVENTION WAS DIDN'T YOU?"
+        "HAHAHAHA THAT WAS ALL A DIVERSION. YOU NEVER KNEW WHAT THE PURPOSE OF THIS ENTIRE CONVENTION WAS DIDN'T YOU?"
 
-    a "What??? Isn't it just a place for eggdog enthusiasts to get free stickers and merch???"
+        a "What??? Isn't it just a place for eggdog enthusiasts to get free stickers and merch???"
 
-    "WELL, YES, BUT I BET YOU DIDN'T EVEN READ THE BROCHURE FOR THE VENUE."
+        "WELL, YES, BUT I BET YOU DIDN'T EVEN READ THE BROCHURE FOR THE VENUE."
 
-    a "You got us there."
+        a "You got us there."
 
-    "THE CONVENTION WAS ALSO WHERE EGGDOG TECH WAS GOING TO REVEAL THEIR NEWEST EGGDOGINATOR THAT CAN TURN EGGS INTO EGGDOGS."
+        "THE CONVENTION WAS ALSO WHERE EGGDOG TECH WAS GOING TO REVEAL THEIR NEWEST EGGDOGINATOR THAT CAN TURN EGGS INTO EGGDOGS."
 
-    a "What???? How did we not hear about this."
-    e "Is this what happened when we were late??"
+        a "What???? How did we not hear about this."
+        e "Is this what happened when we were late??"
 
-    "YOU SEE, THE EGGDOGINATOR RUNS ON EGGDOGINITE, A POWERFUL GEMSTONE WORSHIPPED BY MAN AND EGGDOG ALIKE. BUT INSTEAD OF TURNING EGGS INTO USELESS EGGDOGS I'VE HARNESSED THE EGGDOGINITE TO ITS FULL POTENTIAL..."
-    "AND I'M GOING TO USE ITS POWER TO WIPE THIS SAD CONVENTION AND ALL THE EGGDOGS OFF THE FACE OF THE PLANET. PUNY HUMANS! YOU'RE ABOUT TO WITNESS HISTORY."
-    e "Why are you doing this???"
+        "YOU SEE, THE EGGDOGINATOR RUNS ON EGGDOGINITE, A POWERFUL GEMSTONE WORSHIPPED BY MAN AND EGGDOG ALIKE. BUT INSTEAD OF TURNING EGGS INTO USELESS EGGDOGS I'VE HARNESSED THE EGGDOGINITE TO ITS FULL POTENTIAL..."
+        "AND I'M GOING TO USE ITS POWER TO WIPE THIS SAD CONVENTION AND ALL THE EGGDOGS OFF THE FACE OF THE PLANET. PUNY HUMANS! YOU'RE ABOUT TO WITNESS HISTORY."
+        e "Why are you doing this???"
 
-    "WHY AM I DOING THIS?? YOU'RE REALLY ASKING ME THAT RIGHT NOW??? HAHA... BWAHAHAHAHA...!!! BECAUSE I CAN!!"
+        "WHY AM I DOING THIS?? YOU'RE REALLY ASKING ME THAT RIGHT NOW??? HAHA... BWAHAHAHAHA...!!! BECAUSE I CAN!!"
 
-    e "Show your face you coward!"
+        e "Show your face you coward!"
 
-    show e deep at center
+        show e deep at center
 
-    e "!!!"
+        e "!!!"
 
-    e "Omg Begg was right - it is hideous."
+        e "Omg Begg was right - it is hideous."
 
-    e "You can kidnap the eggdogs, you can even take the eggdoginite, but I'm not going to let you destroy this planet."
+        e "You can kidnap the eggdogs, you can even take the eggdoginite, but I'm not going to let you destroy this planet."
 
-    a "Emily.... that face looks familiar."
+        a "Emily.... that face looks familiar."
 
-    e "Be quiet I'm in the middle of my rant."
-    e "And I'm gonna stop you, you hideous beast!!!"
+        e "Be quiet I'm in the middle of my rant."
+        e "And I'm gonna stop you, you hideous beast!!!"
 
-    "SILENCE... HAHAHAHAHAHAHA you fool... I AM YOU."
+        "SILENCE... HAHAHAHAHAHAHA you fool... I AM YOU."
 
-    e ":0"
-    a ":0"
+        e ":0"
+        a ":0"
 
-    E "PREPARE TO DIE."
+        E "PREPARE TO DIE."
 
-    hide e deep
-    hide a happy
+        hide e deep
+        hide a happy
 
-    jump ending
+        jump ending
 
 label ending:
     scene black
