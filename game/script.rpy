@@ -1115,15 +1115,15 @@ label Rowen0:
         menu RowenAttackOptions:
             "GARRETT ERVIN":
                     hide attack1
-                    jump Rowen0
+                    jump Rowen1
 
             "EMILY":
                     hide attack1
-                    jump Rowen0
+                    jump Rowen1
 
             "MARK ZUCKERBERG":
                     hide attack1
-                    jump Rowen0
+                    jump Rowen1
 label Rowen1:
     show attack2
     "Critical hit!"
