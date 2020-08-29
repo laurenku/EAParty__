@@ -1057,15 +1057,15 @@ label Sarah0:
     menu SarahAttackOptions:
         "FIREBENDING":
                 hide attack1
-                jump Sarah0
+                jump Sarah1
 
         "BAKED POTATO SOUP":
                 hide attack1
-                jump Sarah0
+                jump Sarah1
 
         "ULTIMATE GOOSE GAME":
                 hide attack1
-                jump Sarah0
+                jump Sarah1
 label Sarah1:
     show attack2
     "Critical hit!"
