@@ -872,84 +872,80 @@ label battle0Health:
     jump RandomPick
 
 label Joyce0:
-    scene aPokemonBG
-        "A wild Kpop Eggdog appears!"
+        "A wild Joyce Eggdog appears!"
         show attack1
         show aDogProps
         #show angie's eggdog
         #show 30 health bar
         menu JoyceAttackOptions:
-            "SARANGHAE <3":
+            "GOOD TYPOGRAPHY":
                     hide attack1
                     jump Joyce1
 
-            "BOBA BRIBE":
+            "A SAD MARSHMALLOW":
                     hide attack1
                     jump Joyce1
 
-            "A VERY NICE COMPLIMENT":
+            "CAT VIDEOS":
                     hide attack1
                     jump Joyce1
 label Joyce1:
         show attack2
         show aDogProps
         "Critical hit!"
-        "Kpop Eggdog used YA GOT NO JAMS."
+        "Joyce Eggdog used SUBSTANCE PAINTER."
         #hide 30 health bar
         #show 20 health bar
         menu JoyceAttackOptions2:
-            "SARANGHAE <3":
+            "GOOD TYPOGRAPHY":
                     hide attack2
                     jump Joyce2
 
-            "BOBA BRIBE":
+            "A SAD MARSHMALLOW":
                     hide attack2
                     jump Joyce2
 
-            "A VERY NICE COMPLIMENT":
+            "CAT VIDEOS":
                     hide attack2
                     jump Joyce2
 label Joyce2:
         show attack2
         show aDogProps
         "Critical hit!"
-        "Kpop Eggdog used YA GOT NO JAMS."
+        "Joyce Eggdog used C0."
         #hide 30 health bar
         #show 20 health bar
         menu JoyceAttackOptions3:
-            "SARANGHAE <3":
+            "GOOD TYPOGRAPHY":
                     hide attack2
                     jump Joyce3
 
-            "BOBA BRIBE":
+            "A SAD MARSHMALLOW":
                     hide attack2
                     jump Joyce3
 
-            "A VERY NICE COMPLIMENT":
+            "CAT VIDEOS":
                     hide attack2
                     jump Joyce3
 label Joyce3:
-    if epath:
-        "You caught the Joyce Eggdog!"
-    else:
         "You caught the Joyce Eggdog!"
 
 label Lauren0:
-    "A wild Kpop Eggdog appears!"
+    "A wild Lauren Eggdog appears!"
     show attack1
     show aDogProps
     #show angie's eggdog
     #show 30 health bar
     menu LaurenAttackOptions:
-        "SARANGHAE <3":
+        "DENTAL HYGIENE":
                 hide attack1
                 jump Lauren1
 
-        "BOBA BRIBE":
+        "A BIG SCARF":
                 hide attack1
                 jump Lauren1
 
-        "A VERY NICE COMPLIMENT":
+        "WIZARD101":
                 hide attack1
                 jump Lauren1
 
@@ -957,19 +953,19 @@ label Lauren1:
     show attack2
     show aDogProps
     "Critical hit!"
-    "Kpop Eggdog used YA GOT NO JAMS."
+    "Lauren Eggdog used YA GOT NO JAMS."
     #hide 30 health bar
     #show 20 health bar
     menu LaurenAttackOptions2:
-        "SARANGHAE <3":
+        "DENTAL HYGIENE":
                 hide attack2
                 jump Lauren2
 
-        "BOBA BRIBE":
+        "A BIG SCARF":
                 hide attack2
                 jump Lauren2
 
-        "A VERY NICE COMPLIMENT":
+        "WIZARD101":
                 hide attack2
                 jump Lauren2
 
@@ -977,19 +973,19 @@ label Lauren2:
     show attack2
     show aDogProps
     "Critical hit!"
-    "Kpop Eggdog used YA GOT NO JAMS."
+    "Lauren Eggdog used YA GOT NO JAMS."
     #hide 30 health bar
     #show 20 health bar
     menu LaurenAttackOptions3:
-        "SARANGHAE <3":
+        "DENTAL HYGIENE":
                 hide attack2
                 jump Lauren3
 
-        "BOBA BRIBE":
+        "A BIG SCARF":
                 hide attack2
                 jump Lauren3
 
-        "A VERY NICE COMPLIMENT":
+        "WIZARD101":
                 hide attack2
                 jump Lauren3
 
@@ -1000,7 +996,7 @@ label Lauren3:
         "You caught the Lauren Eggdog!"
 
 label Mikey0:
-    "A wild Kpop Eggdog appears!"
+    "A wild Mikey Eggdog appears!"
     show attack1
     show aDogProps
     #show angie's eggdog
