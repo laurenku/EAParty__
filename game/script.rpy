@@ -869,6 +869,7 @@ label battle0Health:
         #hide Torchy Eggdog
         #hide 10 health bar
         "You caught the Torchy's Eggdog!"
+    jump RandomPick
 
 label Joyce0:
         "A wild Joyce Eggdog appears!"
@@ -1264,6 +1265,22 @@ label Matthew2:
 label Matthew3:
         "You caught the Matthew Eggdog!"
         jump con2
+
+label RandomPick:
+    $ d20roll = renpy.random.randint(1, 6)
+    if d20roll == 1:
+        jump Joyce0
+    if d20roll == 2:
+        jump Lauren0
+    if d20roll == 3:
+        jump Mikey0
+    if d20roll == 4:
+        jump Sarah0
+    if d20roll == 5:
+        jump Rowen0
+    if d20roll == 6:
+        jump Matthew0
+
 
 
 #pokemon battle scene ends
